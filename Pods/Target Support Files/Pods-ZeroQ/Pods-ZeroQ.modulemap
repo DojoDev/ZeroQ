@@ -1,0 +1,6 @@
+framework module Pods_ZeroQ {
+  umbrella header "Pods-ZeroQ-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,6 +13,30 @@
 		AB75CEC0220F622F0054EFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB75CEBF220F622F0054EFEA /* Assets.xcassets */; };
 		AB75CEC3220F622F0054EFEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CEC1220F622F0054EFEA /* LaunchScreen.storyboard */; };
 		AB75CECE220F622F0054EFEA /* ZeroQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CECD220F622F0054EFEA /* ZeroQTests.swift */; };
+		AB75CEDB220F632B0054EFEA /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEDA220F632B0054EFEA /* Wallet.swift */; };
+		AB75CEDD220F63450054EFEA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEDC220F63450054EFEA /* Transaction.swift */; };
+		AB75CEDF220F63540054EFEA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEDE220F63540054EFEA /* Group.swift */; };
+		AB75CEE2220F63670054EFEA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEE1220F63670054EFEA /* Event.swift */; };
+		AB75CEE4220F63A60054EFEA /* Shopkeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEE3220F63A60054EFEA /* Shopkeeper.swift */; };
+		AB75CEE6220F63BA0054EFEA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEE5220F63BA0054EFEA /* Product.swift */; };
+		AB75CEEA220F66690054EFEA /* EventAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEE9220F66690054EFEA /* EventAPIDescriptor.swift */; };
+		AB75CEED220F67240054EFEA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEEC220F67240054EFEA /* StringExtension.swift */; };
+		AB75CEF4220F693C0054EFEA /* ProductAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEF3220F693C0054EFEA /* ProductAPIDescriptor.swift */; };
+		AB75CEF6220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEF5220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift */; };
+		AB75CEF8220F69CB0054EFEA /* GroupAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEF7220F69CB0054EFEA /* GroupAPIDescriptor.swift */; };
+		AB75CEFA220F69E10054EFEA /* TransactionAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEF9220F69E10054EFEA /* TransactionAPIDescriptor.swift */; };
+		AB75CEFC220F6A000054EFEA /* WalletAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEFB220F6A000054EFEA /* WalletAPIDescriptor.swift */; };
+		AB75CEFE220F6A8B0054EFEA /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEFD220F6A8B0054EFEA /* ProductService.swift */; };
+		AB75CF00220F6AD00054EFEA /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEFF220F6AD00054EFEA /* UIStoryboard.swift */; };
+		AB75CF02220F6B3A0054EFEA /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF01220F6B3A0054EFEA /* Identifiable.swift */; };
+		AB75CF0A220F6C290054EFEA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF04220F6C290054EFEA /* ResponseModel.swift */; };
+		AB75CF0B220F6C290054EFEA /* TargetType+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF05220F6C290054EFEA /* TargetType+Encode.swift */; };
+		AB75CF0C220F6C290054EFEA /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF06220F6C290054EFEA /* BaseService.swift */; };
+		AB75CF0D220F6C290054EFEA /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF07220F6C290054EFEA /* ServiceError.swift */; };
+		AB75CF0E220F6C290054EFEA /* Response+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF08220F6C290054EFEA /* Response+Decode.swift */; };
+		AB75CF0F220F6C290054EFEA /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF09220F6C290054EFEA /* ErrorManager.swift */; };
+		D46DA019D5A98C78BB82C45B /* Pods_ZeroQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */; };
+		E3F7A3C1C8C71C1A4BA88C05 /* Pods_ZeroQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4004348852F2ACE60B6E8A10 /* Pods-ZeroQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQ.release.xcconfig"; path = "Target Support Files/Pods-ZeroQ/Pods-ZeroQ.release.xcconfig"; sourceTree = "<group>"; };
+		49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeroQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeroQTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CD7A82D3CC2B6CB7C00046 /* Pods-ZeroQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQTests.debug.xcconfig"; path = "Target Support Files/Pods-ZeroQTests/Pods-ZeroQTests.debug.xcconfig"; sourceTree = "<group>"; };
+		92A9E2D47F4DC96E9423144A /* Pods-ZeroQTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQTests.release.xcconfig"; path = "Target Support Files/Pods-ZeroQTests/Pods-ZeroQTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB75CEB5220F622E0054EFEA /* ZeroQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB75CEB8220F622E0054EFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB75CEBA220F622E0054EFEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +65,29 @@
 		AB75CEC9220F622F0054EFEA /* ZeroQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB75CECD220F622F0054EFEA /* ZeroQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroQTests.swift; sourceTree = "<group>"; };
 		AB75CECF220F622F0054EFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB75CEDA220F632B0054EFEA /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		AB75CEDC220F63450054EFEA /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		AB75CEDE220F63540054EFEA /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		AB75CEE1220F63670054EFEA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AB75CEE3220F63A60054EFEA /* Shopkeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopkeeper.swift; sourceTree = "<group>"; };
+		AB75CEE5220F63BA0054EFEA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AB75CEE9220F66690054EFEA /* EventAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPIDescriptor.swift; sourceTree = "<group>"; };
+		AB75CEEC220F67240054EFEA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		AB75CEF3220F693C0054EFEA /* ProductAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPIDescriptor.swift; sourceTree = "<group>"; };
+		AB75CEF5220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopkeeperAPIDescriptor.swift; sourceTree = "<group>"; };
+		AB75CEF7220F69CB0054EFEA /* GroupAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAPIDescriptor.swift; sourceTree = "<group>"; };
+		AB75CEF9220F69E10054EFEA /* TransactionAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAPIDescriptor.swift; sourceTree = "<group>"; };
+		AB75CEFB220F6A000054EFEA /* WalletAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAPIDescriptor.swift; sourceTree = "<group>"; };
+		AB75CEFD220F6A8B0054EFEA /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		AB75CEFF220F6AD00054EFEA /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		AB75CF01220F6B3A0054EFEA /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		AB75CF04220F6C290054EFEA /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		AB75CF05220F6C290054EFEA /* TargetType+Encode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TargetType+Encode.swift"; sourceTree = "<group>"; };
+		AB75CF06220F6C290054EFEA /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		AB75CF07220F6C290054EFEA /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		AB75CF08220F6C290054EFEA /* Response+Decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Decode.swift"; sourceTree = "<group>"; };
+		AB75CF09220F6C290054EFEA /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQ.debug.xcconfig"; path = "Target Support Files/Pods-ZeroQ/Pods-ZeroQ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46DA019D5A98C78BB82C45B /* Pods_ZeroQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +103,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F7A3C1C8C71C1A4BA88C05 /* Pods_ZeroQTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0162E87C7AB8891C6BEC7620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */,
+				56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB75CEAC220F622E0054EFEA = {
 			isa = PBXGroup;
 			children = (
 				AB75CEB7220F622E0054EFEA /* ZeroQ */,
 				AB75CECC220F622F0054EFEA /* ZeroQTests */,
 				AB75CEB6220F622E0054EFEA /* Products */,
+				F01E0509ECFA8B6E5DA65EBD /* Pods */,
+				0162E87C7AB8891C6BEC7620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +142,10 @@
 		AB75CEB7220F622E0054EFEA /* ZeroQ */ = {
 			isa = PBXGroup;
 			children = (
+				AB75CEEB220F66EA0054EFEA /* Extension */,
+				AB75CEE7220F65CA0054EFEA /* Service */,
+				AB75CED9220F62B50054EFEA /* View */,
+				AB75CED8220F62A60054EFEA /* Model */,
 				AB75CEB8220F622E0054EFEA /* AppDelegate.swift */,
 				AB75CEBA220F622E0054EFEA /* ViewController.swift */,
 				AB75CEBC220F622E0054EFEA /* Main.storyboard */,
@@ -96,6 +165,123 @@
 			path = ZeroQTests;
 			sourceTree = "<group>";
 		};
+		AB75CED8220F62A60054EFEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEDA220F632B0054EFEA /* Wallet.swift */,
+				AB75CEDC220F63450054EFEA /* Transaction.swift */,
+				AB75CEDE220F63540054EFEA /* Group.swift */,
+				AB75CEE1220F63670054EFEA /* Event.swift */,
+				AB75CEE3220F63A60054EFEA /* Shopkeeper.swift */,
+				AB75CEE5220F63BA0054EFEA /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB75CED9220F62B50054EFEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB75CEE7220F65CA0054EFEA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CF03220F6C290054EFEA /* Base */,
+				AB75CEF2220F69280054EFEA /* Product */,
+				AB75CEF1220F69130054EFEA /* Shopkeeper */,
+				AB75CEF0220F68F50054EFEA /* Group */,
+				AB75CEEF220F68EF0054EFEA /* Transaction */,
+				AB75CEEE220F68E40054EFEA /* Wallet */,
+				AB75CEE8220F665C0054EFEA /* Event */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AB75CEE8220F665C0054EFEA /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEE9220F66690054EFEA /* EventAPIDescriptor.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		AB75CEEB220F66EA0054EFEA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEEC220F67240054EFEA /* StringExtension.swift */,
+				AB75CEFF220F6AD00054EFEA /* UIStoryboard.swift */,
+				AB75CF01220F6B3A0054EFEA /* Identifiable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AB75CEEE220F68E40054EFEA /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEFB220F6A000054EFEA /* WalletAPIDescriptor.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		AB75CEEF220F68EF0054EFEA /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEF9220F69E10054EFEA /* TransactionAPIDescriptor.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		AB75CEF0220F68F50054EFEA /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEF7220F69CB0054EFEA /* GroupAPIDescriptor.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		AB75CEF1220F69130054EFEA /* Shopkeeper */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEF5220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift */,
+			);
+			path = Shopkeeper;
+			sourceTree = "<group>";
+		};
+		AB75CEF2220F69280054EFEA /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEF3220F693C0054EFEA /* ProductAPIDescriptor.swift */,
+				AB75CEFD220F6A8B0054EFEA /* ProductService.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		AB75CF03220F6C290054EFEA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CF04220F6C290054EFEA /* ResponseModel.swift */,
+				AB75CF05220F6C290054EFEA /* TargetType+Encode.swift */,
+				AB75CF06220F6C290054EFEA /* BaseService.swift */,
+				AB75CF07220F6C290054EFEA /* ServiceError.swift */,
+				AB75CF08220F6C290054EFEA /* Response+Decode.swift */,
+				AB75CF09220F6C290054EFEA /* ErrorManager.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F01E0509ECFA8B6E5DA65EBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */,
+				4004348852F2ACE60B6E8A10 /* Pods-ZeroQ.release.xcconfig */,
+				83CD7A82D3CC2B6CB7C00046 /* Pods-ZeroQTests.debug.xcconfig */,
+				92A9E2D47F4DC96E9423144A /* Pods-ZeroQTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB75CED2220F622F0054EFEA /* Build configuration list for PBXNativeTarget "ZeroQ" */;
 			buildPhases = (
+				B6F85A3F3D0E2DFAF6A963C0 /* [CP] Check Pods Manifest.lock */,
 				AB75CEB1220F622E0054EFEA /* Sources */,
 				AB75CEB2220F622E0054EFEA /* Frameworks */,
 				AB75CEB3220F622E0054EFEA /* Resources */,
+				815CB45295D767F7C921C0C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB75CED5220F622F0054EFEA /* Build configuration list for PBXNativeTarget "ZeroQTests" */;
 			buildPhases = (
+				6CDBB0AE1124B86A95F3EB6F /* [CP] Check Pods Manifest.lock */,
 				AB75CEC5220F622F0054EFEA /* Sources */,
 				AB75CEC6220F622F0054EFEA /* Frameworks */,
 				AB75CEC7220F622F0054EFEA /* Resources */,
@@ -192,13 +381,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6CDBB0AE1124B86A95F3EB6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZeroQTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		815CB45295D767F7C921C0C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZeroQ/Pods-ZeroQ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZeroQ/Pods-ZeroQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6F85A3F3D0E2DFAF6A963C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZeroQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB75CEB1220F622E0054EFEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB75CEE4220F63A60054EFEA /* Shopkeeper.swift in Sources */,
+				AB75CEFE220F6A8B0054EFEA /* ProductService.swift in Sources */,
+				AB75CEE6220F63BA0054EFEA /* Product.swift in Sources */,
+				AB75CEED220F67240054EFEA /* StringExtension.swift in Sources */,
+				AB75CF0B220F6C290054EFEA /* TargetType+Encode.swift in Sources */,
+				AB75CEDB220F632B0054EFEA /* Wallet.swift in Sources */,
+				AB75CEFC220F6A000054EFEA /* WalletAPIDescriptor.swift in Sources */,
 				AB75CEBB220F622E0054EFEA /* ViewController.swift in Sources */,
+				AB75CF0E220F6C290054EFEA /* Response+Decode.swift in Sources */,
+				AB75CEF4220F693C0054EFEA /* ProductAPIDescriptor.swift in Sources */,
+				AB75CEFA220F69E10054EFEA /* TransactionAPIDescriptor.swift in Sources */,
+				AB75CEF8220F69CB0054EFEA /* GroupAPIDescriptor.swift in Sources */,
+				AB75CF0C220F6C290054EFEA /* BaseService.swift in Sources */,
+				AB75CEDD220F63450054EFEA /* Transaction.swift in Sources */,
+				AB75CEF6220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift in Sources */,
+				AB75CF00220F6AD00054EFEA /* UIStoryboard.swift in Sources */,
+				AB75CF02220F6B3A0054EFEA /* Identifiable.swift in Sources */,
+				AB75CEDF220F63540054EFEA /* Group.swift in Sources */,
+				AB75CF0F220F6C290054EFEA /* ErrorManager.swift in Sources */,
+				AB75CEEA220F66690054EFEA /* EventAPIDescriptor.swift in Sources */,
+				AB75CF0D220F6C290054EFEA /* ServiceError.swift in Sources */,
+				AB75CEE2220F63670054EFEA /* Event.swift in Sources */,
 				AB75CEB9220F622E0054EFEA /* AppDelegate.swift in Sources */,
+				AB75CF0A220F6C290054EFEA /* ResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +642,7 @@
 		};
 		AB75CED3220F622F0054EFEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +661,7 @@
 		};
 		AB75CED4220F622F0054EFEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4004348852F2ACE60B6E8A10 /* Pods-ZeroQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +680,7 @@
 		};
 		AB75CED6220F622F0054EFEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CD7A82D3CC2B6CB7C00046 /* Pods-ZeroQTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +702,7 @@
 		};
 		AB75CED7220F622F0054EFEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A9E2D47F4DC96E9423144A /* Pods-ZeroQTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
