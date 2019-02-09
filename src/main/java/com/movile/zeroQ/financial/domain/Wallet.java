@@ -13,7 +13,7 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter
-@Table(name="wallet",schema="financial")
+@Table(name = "wallet", schema = "financial")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Wallet {
