@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.movile.zeroQ.stock.domain.Product;
@@ -18,7 +19,7 @@ public class ProductResource {
 	@Autowired
 	private ProductService productService;
 	
-	@GetMapping
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public List<Product> list() {
 		return productService.listAll();
 	}
