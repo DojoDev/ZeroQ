@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB75CEB9220F622E0054EFEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEB8220F622E0054EFEA /* AppDelegate.swift */; };
+		AB75CEBB220F622E0054EFEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEBA220F622E0054EFEA /* ViewController.swift */; };
+		AB75CEBE220F622E0054EFEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CEBC220F622E0054EFEA /* Main.storyboard */; };
+		AB75CEC0220F622F0054EFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB75CEBF220F622F0054EFEA /* Assets.xcassets */; };
+		AB75CEC3220F622F0054EFEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CEC1220F622F0054EFEA /* LaunchScreen.storyboard */; };
+		AB75CECE220F622F0054EFEA /* ZeroQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CECD220F622F0054EFEA /* ZeroQTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB75CECA220F622F0054EFEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB75CEAD220F622E0054EFEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB75CEB4220F622E0054EFEA;
+			remoteInfo = ZeroQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB75CEB5220F622E0054EFEA /* ZeroQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB75CEB8220F622E0054EFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB75CEBA220F622E0054EFEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB75CEBD220F622E0054EFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB75CEBF220F622F0054EFEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB75CEC2220F622F0054EFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB75CEC4220F622F0054EFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB75CEC9220F622F0054EFEA /* ZeroQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB75CECD220F622F0054EFEA /* ZeroQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroQTests.swift; sourceTree = "<group>"; };
+		AB75CECF220F622F0054EFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB75CEB2220F622E0054EFEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB75CEC6220F622F0054EFEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB75CEAC220F622E0054EFEA = {
+			isa = PBXGroup;
+			children = (
+				AB75CEB7220F622E0054EFEA /* ZeroQ */,
+				AB75CECC220F622F0054EFEA /* ZeroQTests */,
+				AB75CEB6220F622E0054EFEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB75CEB6220F622E0054EFEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEB5220F622E0054EFEA /* ZeroQ.app */,
+				AB75CEC9220F622F0054EFEA /* ZeroQTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB75CEB7220F622E0054EFEA /* ZeroQ */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CEB8220F622E0054EFEA /* AppDelegate.swift */,
+				AB75CEBA220F622E0054EFEA /* ViewController.swift */,
+				AB75CEBC220F622E0054EFEA /* Main.storyboard */,
+				AB75CEBF220F622F0054EFEA /* Assets.xcassets */,
+				AB75CEC1220F622F0054EFEA /* LaunchScreen.storyboard */,
+				AB75CEC4220F622F0054EFEA /* Info.plist */,
+			);
+			path = ZeroQ;
+			sourceTree = "<group>";
+		};
+		AB75CECC220F622F0054EFEA /* ZeroQTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CECD220F622F0054EFEA /* ZeroQTests.swift */,
+				AB75CECF220F622F0054EFEA /* Info.plist */,
+			);
+			path = ZeroQTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB75CEB4220F622E0054EFEA /* ZeroQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB75CED2220F622F0054EFEA /* Build configuration list for PBXNativeTarget "ZeroQ" */;
+			buildPhases = (
+				AB75CEB1220F622E0054EFEA /* Sources */,
+				AB75CEB2220F622E0054EFEA /* Frameworks */,
+				AB75CEB3220F622E0054EFEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroQ;
+			productName = ZeroQ;
+			productReference = AB75CEB5220F622E0054EFEA /* ZeroQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB75CEC8220F622F0054EFEA /* ZeroQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB75CED5220F622F0054EFEA /* Build configuration list for PBXNativeTarget "ZeroQTests" */;
+			buildPhases = (
+				AB75CEC5220F622F0054EFEA /* Sources */,
+				AB75CEC6220F622F0054EFEA /* Frameworks */,
+				AB75CEC7220F622F0054EFEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB75CECB220F622F0054EFEA /* PBXTargetDependency */,
+			);
+			name = ZeroQTests;
+			productName = ZeroQTests;
+			productReference = AB75CEC9220F622F0054EFEA /* ZeroQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB75CEAD220F622E0054EFEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "hackthon movile";
+				TargetAttributes = {
+					AB75CEB4220F622E0054EFEA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AB75CEC8220F622F0054EFEA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AB75CEB4220F622E0054EFEA;
+					};
+				};
+			};
+			buildConfigurationList = AB75CEB0220F622E0054EFEA /* Build configuration list for PBXProject "ZeroQ" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB75CEAC220F622E0054EFEA;
+			productRefGroup = AB75CEB6220F622E0054EFEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB75CEB4220F622E0054EFEA /* ZeroQ */,
+				AB75CEC8220F622F0054EFEA /* ZeroQTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB75CEB3220F622E0054EFEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB75CEC3220F622F0054EFEA /* LaunchScreen.storyboard in Resources */,
+				AB75CEC0220F622F0054EFEA /* Assets.xcassets in Resources */,
+				AB75CEBE220F622E0054EFEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB75CEC7220F622F0054EFEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB75CEB1220F622E0054EFEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB75CEBB220F622E0054EFEA /* ViewController.swift in Sources */,
+				AB75CEB9220F622E0054EFEA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB75CEC5220F622F0054EFEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB75CECE220F622F0054EFEA /* ZeroQTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB75CECB220F622F0054EFEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB75CEB4220F622E0054EFEA /* ZeroQ */;
+			targetProxy = AB75CECA220F622F0054EFEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB75CEBC220F622E0054EFEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB75CEBD220F622E0054EFEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB75CEC1220F622F0054EFEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB75CEC2220F622F0054EFEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB75CED0220F622F0054EFEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB75CED1220F622F0054EFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB75CED3220F622F0054EFEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MX68PC94Q;
+				INFOPLIST_FILE = ZeroQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackthon.movile.ZeroQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB75CED4220F622F0054EFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MX68PC94Q;
+				INFOPLIST_FILE = ZeroQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackthon.movile.ZeroQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB75CED6220F622F0054EFEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MX68PC94Q;
+				INFOPLIST_FILE = ZeroQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackthon.movile.ZeroQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroQ.app/ZeroQ";
+			};
+			name = Debug;
+		};
+		AB75CED7220F622F0054EFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MX68PC94Q;
+				INFOPLIST_FILE = ZeroQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackthon.movile.ZeroQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroQ.app/ZeroQ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB75CEB0220F622E0054EFEA /* Build configuration list for PBXProject "ZeroQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB75CED0220F622F0054EFEA /* Debug */,
+				AB75CED1220F622F0054EFEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB75CED2220F622F0054EFEA /* Build configuration list for PBXNativeTarget "ZeroQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB75CED3220F622F0054EFEA /* Debug */,
+				AB75CED4220F622F0054EFEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB75CED5220F622F0054EFEA /* Build configuration list for PBXNativeTarget "ZeroQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB75CED6220F622F0054EFEA /* Debug */,
+				AB75CED7220F622F0054EFEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB75CEAD220F622E0054EFEA /* Project object */;
+}
