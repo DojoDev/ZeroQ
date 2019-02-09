@@ -12,6 +12,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.movile.zeroQ.financial.domain.Wallet;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,11 +30,11 @@ public class Group {
 	@GeneratedValue
 	@Column(name="id_group")
 	private Integer id;
-	@OneToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_event")
+	@OneToOne
+	@JoinColumn(name="id_event",nullable=true)
 	private Event event;
 	@OneToMany(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_merchant")
-	private List<Merchant> merchants;
+	@JoinColumn(name = "id_wallet",nullable=true)
+	private List<Wallet> wallets;
 	
 }

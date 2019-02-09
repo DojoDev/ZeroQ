@@ -12,7 +12,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.movile.zeroQ.event.domain.Event;
-import com.movile.zeroQ.event.domain.Group;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -34,12 +33,9 @@ public class Wallet {
 	private String qr_code;
 	private String card_information;
 	@OneToMany(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_merchant")
-	private List<Group> groups;
-	@OneToMany(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_event")
+	@JoinColumn(name = "id_event",nullable=true)
 	private List<Event> events;
 	@OneToMany(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_transaction")
+	@JoinColumn(name = "id_transaction",nullable=true)
 	private List<Transaction> transactions;
 }

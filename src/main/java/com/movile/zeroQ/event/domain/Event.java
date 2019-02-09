@@ -31,6 +31,6 @@ public class Event {
 	private String name;
 	private LocalDate date;
 	@OneToMany(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_merchant")
+	@JoinColumn(name = "id_merchant",nullable=true)
 	private List<Merchant> merchant;
 }
