@@ -31,7 +31,7 @@ extension EventAPI : TargetType {
         return [String:String]()
     }
     
-    var baseURL: URL { return URL(string: "add url")! }
+    var baseURL: URL { return URL(string: Constants.baseUrl)! }
     
     var path: String {
         switch self {
@@ -52,7 +52,6 @@ extension EventAPI : TargetType {
     var parameterEncoding: ParameterEncoding {
         return JSONEncoding.default
     }
-    
     
     var task: Task {
         switch self  {

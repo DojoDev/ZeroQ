@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import Moya
 
 enum ProductAPI {
@@ -33,7 +32,7 @@ extension ProductAPI : TargetType {
         return [String:String]()
     }
     
-    var baseURL: URL { return URL(string: "add url")! }
+    var baseURL: URL { return URL(string: Constants.baseUrl)! }
     
     var path: String {
         switch self {

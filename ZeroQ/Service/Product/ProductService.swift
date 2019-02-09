@@ -25,7 +25,6 @@ struct ProductService: BaseService {
         }
     }
     
-    
     func getAll( completion :  @escaping (Result<[Product], ServiceError>)->()) {
         provider.request(.getAll) { result in
             completion(self.handle(result: result))

@@ -16,6 +16,4 @@ struct Wallet: Codable {
     let groups: [Group]?
     let events: [Event]?
     let transactions: [Transaction]?
-    
-    
 }

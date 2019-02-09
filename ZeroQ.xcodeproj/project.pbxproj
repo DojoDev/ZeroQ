@@ -35,6 +35,12 @@
 		AB75CF0D220F6C290054EFEA /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF07220F6C290054EFEA /* ServiceError.swift */; };
 		AB75CF0E220F6C290054EFEA /* Response+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF08220F6C290054EFEA /* Response+Decode.swift */; };
 		AB75CF0F220F6C290054EFEA /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF09220F6C290054EFEA /* ErrorManager.swift */; };
+		AB75CF11220F74660054EFEA /* ShopkeeperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF10220F74660054EFEA /* ShopkeeperService.swift */; };
+		AB75CF13220F747C0054EFEA /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF12220F747C0054EFEA /* GroupService.swift */; };
+		AB75CF15220F75080054EFEA /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF14220F75080054EFEA /* TransactionService.swift */; };
+		AB75CF17220F75130054EFEA /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF16220F75130054EFEA /* WalletService.swift */; };
+		AB75CF19220F75210054EFEA /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF18220F75210054EFEA /* EventService.swift */; };
+		AB75CF1C220F79960054EFEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF1B220F79960054EFEA /* Constants.swift */; };
 		D46DA019D5A98C78BB82C45B /* Pods_ZeroQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */; };
 		E3F7A3C1C8C71C1A4BA88C05 /* Pods_ZeroQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +93,12 @@
 		AB75CF07220F6C290054EFEA /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		AB75CF08220F6C290054EFEA /* Response+Decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Decode.swift"; sourceTree = "<group>"; };
 		AB75CF09220F6C290054EFEA /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		AB75CF10220F74660054EFEA /* ShopkeeperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopkeeperService.swift; sourceTree = "<group>"; };
+		AB75CF12220F747C0054EFEA /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
+		AB75CF14220F75080054EFEA /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		AB75CF16220F75130054EFEA /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
+		AB75CF18220F75210054EFEA /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		AB75CF1B220F79960054EFEA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQ.debug.xcconfig"; path = "Target Support Files/Pods-ZeroQ/Pods-ZeroQ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +154,7 @@
 		AB75CEB7220F622E0054EFEA /* ZeroQ */ = {
 			isa = PBXGroup;
 			children = (
+				AB75CF1A220F798D0054EFEA /* Util */,
 				AB75CEEB220F66EA0054EFEA /* Extension */,
 				AB75CEE7220F65CA0054EFEA /* Service */,
 				AB75CED9220F62B50054EFEA /* View */,
@@ -188,6 +201,7 @@
 		AB75CEE7220F65CA0054EFEA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				AB75CF1D220F7B570054EFEA /* Payment */,
 				AB75CF03220F6C290054EFEA /* Base */,
 				AB75CEF2220F69280054EFEA /* Product */,
 				AB75CEF1220F69130054EFEA /* Shopkeeper */,
@@ -203,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				AB75CEE9220F66690054EFEA /* EventAPIDescriptor.swift */,
+				AB75CF18220F75210054EFEA /* EventService.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -221,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				AB75CEFB220F6A000054EFEA /* WalletAPIDescriptor.swift */,
+				AB75CF16220F75130054EFEA /* WalletService.swift */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -229,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				AB75CEF9220F69E10054EFEA /* TransactionAPIDescriptor.swift */,
+				AB75CF14220F75080054EFEA /* TransactionService.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -237,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				AB75CEF7220F69CB0054EFEA /* GroupAPIDescriptor.swift */,
+				AB75CF12220F747C0054EFEA /* GroupService.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -245,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				AB75CEF5220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift */,
+				AB75CF10220F74660054EFEA /* ShopkeeperService.swift */,
 			);
 			path = Shopkeeper;
 			sourceTree = "<group>";
@@ -269,6 +288,21 @@
 				AB75CF09220F6C290054EFEA /* ErrorManager.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		AB75CF1A220F798D0054EFEA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AB75CF1B220F79960054EFEA /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		AB75CF1D220F7B570054EFEA /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Payment;
 			sourceTree = "<group>";
 		};
 		F01E0509ECFA8B6E5DA65EBD /* Pods */ = {
@@ -464,19 +498,25 @@
 				AB75CEE6220F63BA0054EFEA /* Product.swift in Sources */,
 				AB75CEED220F67240054EFEA /* StringExtension.swift in Sources */,
 				AB75CF0B220F6C290054EFEA /* TargetType+Encode.swift in Sources */,
+				AB75CF1C220F79960054EFEA /* Constants.swift in Sources */,
 				AB75CEDB220F632B0054EFEA /* Wallet.swift in Sources */,
 				AB75CEFC220F6A000054EFEA /* WalletAPIDescriptor.swift in Sources */,
+				AB75CF19220F75210054EFEA /* EventService.swift in Sources */,
 				AB75CEBB220F622E0054EFEA /* ViewController.swift in Sources */,
 				AB75CF0E220F6C290054EFEA /* Response+Decode.swift in Sources */,
+				AB75CF13220F747C0054EFEA /* GroupService.swift in Sources */,
 				AB75CEF4220F693C0054EFEA /* ProductAPIDescriptor.swift in Sources */,
 				AB75CEFA220F69E10054EFEA /* TransactionAPIDescriptor.swift in Sources */,
+				AB75CF17220F75130054EFEA /* WalletService.swift in Sources */,
 				AB75CEF8220F69CB0054EFEA /* GroupAPIDescriptor.swift in Sources */,
 				AB75CF0C220F6C290054EFEA /* BaseService.swift in Sources */,
 				AB75CEDD220F63450054EFEA /* Transaction.swift in Sources */,
+				AB75CF15220F75080054EFEA /* TransactionService.swift in Sources */,
 				AB75CEF6220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift in Sources */,
 				AB75CF00220F6AD00054EFEA /* UIStoryboard.swift in Sources */,
 				AB75CF02220F6B3A0054EFEA /* Identifiable.swift in Sources */,
 				AB75CEDF220F63540054EFEA /* Group.swift in Sources */,
+				AB75CF11220F74660054EFEA /* ShopkeeperService.swift in Sources */,
 				AB75CF0F220F6C290054EFEA /* ErrorManager.swift in Sources */,
 				AB75CEEA220F66690054EFEA /* EventAPIDescriptor.swift in Sources */,
 				AB75CF0D220F6C290054EFEA /* ServiceError.swift in Sources */,
