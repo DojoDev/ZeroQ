@@ -3,6 +3,7 @@ package com.movile.zeroQ.event.domain;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -25,6 +26,7 @@ public class Event {
 
 	@Id
 	@GeneratedValue
+	@Column(name="id_event")
 	private Integer id;
 	private String name;
 	private LocalDate date;

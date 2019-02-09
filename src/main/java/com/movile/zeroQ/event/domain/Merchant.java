@@ -2,6 +2,7 @@ package com.movile.zeroQ.event.domain;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -24,6 +25,7 @@ public class Merchant {
 
 	@Id
 	@GeneratedValue
+	@Column(name="id_merchant")
 	private Integer id;
 	private String name;
 	@OneToMany
