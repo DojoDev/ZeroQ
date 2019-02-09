@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,7 +12,7 @@ import com.movile.zeroQ.event.domain.Event;
 import com.movile.zeroQ.event.service.EventService;
 
 @RestController
-@RequestMapping("events/")
+@RequestMapping("/events")
 public class EventResource {
 
 	@Autowired
@@ -23,7 +24,7 @@ public class EventResource {
 	}
 
 	@GetMapping("/{id}")
-	public Event getEvent(Integer id) {
+	public Event getEvent(@PathVariable("id") Integer id) {
 		return eventService.findById(id);
 	}
 }
