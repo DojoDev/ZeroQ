@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.movile.zeroQ.event.domain.Event;
+import com.movile.zeroQ.event.domain.MyGroup;
 import com.movile.zeroQ.event.service.EventService;
 
 @RestController
@@ -68,6 +69,16 @@ public class EventResource {
 				.buildAndExpand(event.getId()).toUri();
 
 		return ResponseEntity.created(uri).build();
+	}
+	
+	@PostMapping
+	public ResponseEntity<String> createGroup(@Valid @RequestBody MyGroup group, BindingResult result){
+		
+		if(result.hasErrors()) {
+			return ResponseEntity.badRequest().build();
+		}
+
+		return ResponseEntity.ok().build();
 	}
 	
 }
