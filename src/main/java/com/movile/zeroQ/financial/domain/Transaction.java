@@ -1,6 +1,8 @@
 package com.movile.zeroQ.financial.domain;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Objects;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -12,23 +14,33 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
-@Getter @Setter
+@Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Transaction {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id_transaction")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id_transaction")
 	private Integer id;
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "transaction")
+	@Column(name="external_id")
+	private String externalId;
+	@Column(name="original_amount")
+	private String originalAmount;
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "transaction", cascade = CascadeType.MERGE)
 	private List<Wallet> wallets;
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "transaction",cascade=CascadeType.ALL)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "transaction", cascade = CascadeType.ALL)
 	private List<ItemTransaction> itens;
+
 	
+	public BigDecimal valueConsumed() {
+		if(Objects.isNull(itens))return BigDecimal.ZERO;
+		return itens.stream().map(ItemTransaction::getValue).reduce(BigDecimal.ZERO,BigDecimal::add);
+	}
 }

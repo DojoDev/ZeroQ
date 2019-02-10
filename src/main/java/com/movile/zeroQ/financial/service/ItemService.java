@@ -1,6 +1,7 @@
 package com.movile.zeroQ.financial.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,9 +20,15 @@ public class ItemService {
 		for (ItemTransaction itemTransaction : items) {
 			itemTransaction.setStatus(Status.SOLICITADA);
 		}
-		
 		itemTransactionRepository.saveAll(items);
-		
+	}
+
+	public List<ItemTransaction> listAll() {
+		return itemTransactionRepository.findAll();
+	}
+
+	public Optional<ItemTransaction> findById(Integer id) {
+		return itemTransactionRepository.findById(id);
 	}
 
 }
