@@ -11,6 +11,10 @@
 		AB2A4437220F931900FF6AC8 /* SingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2A4436220F931900FF6AC8 /* SingUp.storyboard */; };
 		AB2A443B220F99D700FF6AC8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A443A220F99D700FF6AC8 /* EventCell.swift */; };
 		AB2A443F220F9E6100FF6AC8 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2A443D220F9E6100FF6AC8 /* EventCell.xib */; };
+		AB2A4442220FAA6A00FF6AC8 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2A4441220FAA6A00FF6AC8 /* Transaction.storyboard */; };
+		AB2A4444220FAA8000FF6AC8 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A4443220FAA8000FF6AC8 /* TransactionViewController.swift */; };
+		AB2A4446220FBA7700FF6AC8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A4445220FBA7700FF6AC8 /* UIViewExtension.swift */; };
+		AB2A4448220FBC6400FF6AC8 /* Credit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2A4447220FBC6400FF6AC8 /* Credit.storyboard */; };
 		AB75CEB9220F622E0054EFEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEB8220F622E0054EFEA /* AppDelegate.swift */; };
 		AB75CEBB220F622E0054EFEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEBA220F622E0054EFEA /* ViewController.swift */; };
 		AB75CEBE220F622E0054EFEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CEBC220F622E0054EFEA /* Main.storyboard */; };
@@ -48,7 +52,7 @@
 		AB75CF20220F7D5D0054EFEA /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CF1F220F7D5D0054EFEA /* Event.storyboard */; };
 		AB75CF22220F7D6F0054EFEA /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF21220F7D6F0054EFEA /* EventViewController.swift */; };
 		AB75CF25220F7D8C0054EFEA /* CreditCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CF24220F7D8C0054EFEA /* CreditCard.storyboard */; };
-		AB75CF27220F7DBC0054EFEA /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF26220F7DBC0054EFEA /* CreditCardViewController.swift */; };
+		AB75CF27220F7DBC0054EFEA /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF26220F7DBC0054EFEA /* CreditViewController.swift */; };
 		AB75CF2A220F81980054EFEA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CF29220F81980054EFEA /* Login.storyboard */; };
 		AB75CF2C220F81A50054EFEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CF2B220F81A50054EFEA /* LoginViewController.swift */; };
 		AB75CF41220F858D0054EFEA /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB75CF2F220F858A0054EFEA /* Montserrat-SemiBold.ttf */; };
@@ -69,6 +73,9 @@
 		AB75CF50220F858D0054EFEA /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB75CF3E220F858C0054EFEA /* Montserrat-ExtraLight.ttf */; };
 		AB75CF51220F858D0054EFEA /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB75CF3F220F858D0054EFEA /* Montserrat-LightItalic.ttf */; };
 		AB75CF52220F858D0054EFEA /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB75CF40220F858D0054EFEA /* Montserrat-ExtraLightItalic.ttf */; };
+		ABB9EE43220FC16100338C0F /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE42220FC16100338C0F /* UIButtonExtension.swift */; };
+		ABB9EE45220FCEB000338C0F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE44220FCEB000338C0F /* Configuration.swift */; };
+		ABB9EE48220FD11000338C0F /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB9EE47220FD11000338C0F /* Group.storyboard */; };
 		D46DA019D5A98C78BB82C45B /* Pods_ZeroQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */; };
 		E3F7A3C1C8C71C1A4BA88C05 /* Pods_ZeroQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */; };
 /* End PBXBuildFile section */
@@ -93,6 +100,10 @@
 		AB2A4436220F931900FF6AC8 /* SingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingUp.storyboard; sourceTree = "<group>"; };
 		AB2A443A220F99D700FF6AC8 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		AB2A443D220F9E6100FF6AC8 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		AB2A4441220FAA6A00FF6AC8 /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
+		AB2A4443220FAA8000FF6AC8 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		AB2A4445220FBA7700FF6AC8 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		AB2A4447220FBC6400FF6AC8 /* Credit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credit.storyboard; sourceTree = "<group>"; };
 		AB75CEB5220F622E0054EFEA /* ZeroQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB75CEB8220F622E0054EFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB75CEBA220F622E0054EFEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,7 +145,7 @@
 		AB75CF1F220F7D5D0054EFEA /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
 		AB75CF21220F7D6F0054EFEA /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		AB75CF24220F7D8C0054EFEA /* CreditCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCard.storyboard; sourceTree = "<group>"; };
-		AB75CF26220F7DBC0054EFEA /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		AB75CF26220F7DBC0054EFEA /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		AB75CF29220F81980054EFEA /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		AB75CF2B220F81A50054EFEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AB75CF2F220F858A0054EFEA /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -155,6 +166,9 @@
 		AB75CF3E220F858C0054EFEA /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		AB75CF3F220F858D0054EFEA /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		AB75CF40220F858D0054EFEA /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		ABB9EE42220FC16100338C0F /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		ABB9EE44220FCEB000338C0F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		ABB9EE47220FD11000338C0F /* Group.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Group.storyboard; sourceTree = "<group>"; };
 		F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQ.debug.xcconfig"; path = "Target Support Files/Pods-ZeroQ/Pods-ZeroQ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +199,17 @@
 				56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB2A4440220FAA5400FF6AC8 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				AB2A4441220FAA6A00FF6AC8 /* Transaction.storyboard */,
+				AB2A4443220FAA8000FF6AC8 /* TransactionViewController.swift */,
+				AB2A4447220FBC6400FF6AC8 /* Credit.storyboard */,
+				AB75CF26220F7DBC0054EFEA /* CreditViewController.swift */,
+			);
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 		AB75CEAC220F622E0054EFEA = {
@@ -249,6 +274,8 @@
 		AB75CED9220F62B50054EFEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ABB9EE46220FCF5F00338C0F /* Group */,
+				AB2A4440220FAA5400FF6AC8 /* Transaction */,
 				AB75CF28220F800D0054EFEA /* Auth */,
 				AB75CF23220F7D7E0054EFEA /* CreditCard */,
 				AB75CF1E220F7D4D0054EFEA /* Event */,
@@ -286,6 +313,8 @@
 				AB75CEEC220F67240054EFEA /* StringExtension.swift */,
 				AB75CEFF220F6AD00054EFEA /* UIStoryboard.swift */,
 				AB75CF01220F6B3A0054EFEA /* Identifiable.swift */,
+				AB2A4445220FBA7700FF6AC8 /* UIViewExtension.swift */,
+				ABB9EE42220FC16100338C0F /* UIButtonExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -352,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				AB75CF1B220F79960054EFEA /* Constants.swift */,
+				ABB9EE44220FCEB000338C0F /* Configuration.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -378,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				AB75CF24220F7D8C0054EFEA /* CreditCard.storyboard */,
-				AB75CF26220F7DBC0054EFEA /* CreditCardViewController.swift */,
 			);
 			path = CreditCard;
 			sourceTree = "<group>";
@@ -427,6 +456,14 @@
 				AB75CF30220F858A0054EFEA /* Montserrat-ThinItalic.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		ABB9EE46220FCF5F00338C0F /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9EE47220FD11000338C0F /* Group.storyboard */,
+			);
+			path = Group;
 			sourceTree = "<group>";
 		};
 		F01E0509ECFA8B6E5DA65EBD /* Pods */ = {
@@ -526,7 +563,9 @@
 			files = (
 				AB75CF4F220F858D0054EFEA /* Montserrat-Light.ttf in Resources */,
 				AB75CF4D220F858D0054EFEA /* Montserrat-MediumItalic.ttf in Resources */,
+				AB2A4442220FAA6A00FF6AC8 /* Transaction.storyboard in Resources */,
 				AB75CF4C220F858D0054EFEA /* Montserrat-Regular.ttf in Resources */,
+				ABB9EE48220FD11000338C0F /* Group.storyboard in Resources */,
 				AB75CF48220F858D0054EFEA /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				AB75CF49220F858D0054EFEA /* Montserrat-Medium.ttf in Resources */,
 				AB75CF46220F858D0054EFEA /* Montserrat-BoldItalic.ttf in Resources */,
@@ -534,6 +573,7 @@
 				AB75CF47220F858D0054EFEA /* Montserrat-Thin.ttf in Resources */,
 				AB75CEC3220F622F0054EFEA /* LaunchScreen.storyboard in Resources */,
 				AB75CF4A220F858D0054EFEA /* Montserrat-BlackItalic.ttf in Resources */,
+				AB2A4448220FBC6400FF6AC8 /* Credit.storyboard in Resources */,
 				AB75CF44220F858D0054EFEA /* Montserrat-Black.ttf in Resources */,
 				AB2A443F220F9E6100FF6AC8 /* EventCell.xib in Resources */,
 				AB75CF25220F7D8C0054EFEA /* CreditCard.storyboard in Resources */,
@@ -596,6 +636,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-ZeroQ/Pods-ZeroQ-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
@@ -605,6 +646,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
@@ -650,13 +692,14 @@
 				AB75CF0B220F6C290054EFEA /* TargetType+Encode.swift in Sources */,
 				AB75CF1C220F79960054EFEA /* Constants.swift in Sources */,
 				AB75CEDB220F632B0054EFEA /* Wallet.swift in Sources */,
+				ABB9EE43220FC16100338C0F /* UIButtonExtension.swift in Sources */,
 				AB75CEFC220F6A000054EFEA /* WalletAPIDescriptor.swift in Sources */,
 				AB75CF19220F75210054EFEA /* EventService.swift in Sources */,
 				AB75CEBB220F622E0054EFEA /* ViewController.swift in Sources */,
 				AB75CF0E220F6C290054EFEA /* Response+Decode.swift in Sources */,
 				AB75CF13220F747C0054EFEA /* GroupService.swift in Sources */,
 				AB75CEF4220F693C0054EFEA /* ProductAPIDescriptor.swift in Sources */,
-				AB75CF27220F7DBC0054EFEA /* CreditCardViewController.swift in Sources */,
+				AB75CF27220F7DBC0054EFEA /* CreditViewController.swift in Sources */,
 				AB75CEFA220F69E10054EFEA /* TransactionAPIDescriptor.swift in Sources */,
 				AB75CF17220F75130054EFEA /* WalletService.swift in Sources */,
 				AB75CEF8220F69CB0054EFEA /* GroupAPIDescriptor.swift in Sources */,
@@ -673,10 +716,13 @@
 				AB75CF0F220F6C290054EFEA /* ErrorManager.swift in Sources */,
 				AB75CF22220F7D6F0054EFEA /* EventViewController.swift in Sources */,
 				AB75CEEA220F66690054EFEA /* EventAPIDescriptor.swift in Sources */,
+				AB2A4444220FAA8000FF6AC8 /* TransactionViewController.swift in Sources */,
 				AB75CF0D220F6C290054EFEA /* ServiceError.swift in Sources */,
 				AB75CEE2220F63670054EFEA /* Event.swift in Sources */,
 				AB75CEB9220F622E0054EFEA /* AppDelegate.swift in Sources */,
 				AB75CF0A220F6C290054EFEA /* ResponseModel.swift in Sources */,
+				AB2A4446220FBA7700FF6AC8 /* UIViewExtension.swift in Sources */,
+				ABB9EE45220FCEB000338C0F /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

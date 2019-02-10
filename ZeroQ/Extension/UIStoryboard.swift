@@ -12,7 +12,7 @@ import Foundation
 extension UIStoryboard {
     struct Storyboard {
         let name: String
-        static var login: Storyboard { return Storyboard(name: "Login")}
+        static var transaction: Storyboard { return Storyboard(name: "Transaction")}
     
     }
     

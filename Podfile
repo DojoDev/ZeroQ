@@ -6,6 +6,7 @@ target 'ZeroQ' do
   use_frameworks!
   pod 'Moya'
   pod 'FontAwesome.swift'
+  pod 'IQKeyboardManagerSwift'
   # Pods for ZeroQ
 
   target 'ZeroQTests' do
