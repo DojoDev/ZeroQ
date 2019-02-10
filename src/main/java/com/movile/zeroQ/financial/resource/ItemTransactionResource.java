@@ -29,9 +29,8 @@ import com.movile.zeroQ.financial.service.TransactionService;
 @CrossOrigin
 public class ItemTransactionResource {
 
-	@Autowired
-	private ItemService itemService;
-	private TransactionService transactionService;
+	@Autowired private ItemService itemService;
+	@Autowired private TransactionService transactionService;
 	
 	@GetMapping
 	public List<ItemTransaction> list() {
@@ -43,8 +42,8 @@ public class ItemTransactionResource {
 		return itemService.findById(id).orElseGet(ItemTransaction::new);
 	}
 	
-	@PostMapping
-	public ResponseEntity<String> appendItem(Integer idTransaction, @Valid @RequestBody ItemTransaction item, BindingResult result){
+	@PostMapping("/{id}")
+	public ResponseEntity<String> appendItem(@PathVariable("id") Integer idTransaction, @Valid @RequestBody ItemTransaction item, BindingResult result){
 
 		if(result.hasErrors()) {
 			return ResponseEntity.badRequest().build();
