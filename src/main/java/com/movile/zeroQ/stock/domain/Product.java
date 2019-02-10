@@ -2,6 +2,7 @@ package com.movile.zeroQ.stock.domain;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -30,8 +31,8 @@ public class Product {
 	private Integer id;
 	private String name;
 	private BigDecimal price;
+	@Column(name="image_path")
 	private String imagePath;
-	
 	@ManyToOne
 	@JoinColumn(name = "id_event")
 	@LazyCollection(LazyCollectionOption.TRUE)

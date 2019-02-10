@@ -9,7 +9,5 @@ import com.movile.zeroQ.stock.domain.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Integer> {
-
-	List<Product> findByName(String name);
-
+	public List<Product> findByName(String name);
 }

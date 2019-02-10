@@ -9,6 +9,5 @@ import com.movile.zeroQ.financial.domain.Wallet;
 
 @Repository
 public interface WalletRepository extends JpaRepository<Wallet, Integer>{
-
-	List<Wallet> findByName(String name);
+	public List<Wallet> findByName(String name);
 }

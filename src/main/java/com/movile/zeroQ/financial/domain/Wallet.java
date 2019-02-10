@@ -30,8 +30,10 @@ public class Wallet {
 	@Column(name="id_wallet")
 	private Integer id;
 	private String name;
-	private String qr_code;
-	private String card_information;
+	@Column(name="qr_code")
+	private String qrCode;
+	@Column(name="card_information")
+	private String cardInformation;
 	@ManyToOne
 	@JoinColumn(name = "id_transaction")
 	@LazyCollection(LazyCollectionOption.TRUE)

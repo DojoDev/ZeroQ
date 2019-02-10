@@ -25,19 +25,6 @@ public class TransactionTask {
 	@Value("${customer}") private String customer;
 	@Value("${behalf_of}") private String behalfOf;
 
-	public TransactionResponse sendTransaction(TransactionRequest TransactionRequest,String url,String param) {
-		HttpHeaders headers = new HttpHeaders();
-		headers.set("Authorization", "Basic enBrX3Rlc3RfRXpDa3pGRktpYkdRVTZIRnE3RVlWdXhJOg==");
-		headers.set("Content-Type", "application/json");
-
-		HttpEntity<TransactionRequest> request = new HttpEntity<TransactionRequest>(TransactionRequest, headers);
-
-		ResponseEntity<TransactionResponse> quote = restTemplate.postForEntity(url, request,
-				TransactionResponse.class, param);
-
-		return quote.getBody();
-	}
-
 	public TransactionResponse finalizeTransaction(String idTransaction,BigDecimal reserve) {
 		TransactionRequest transactionRequest = buildTransaction();
 		transactionRequest.setCapture("true");
@@ -49,6 +36,19 @@ public class TransactionTask {
 		TransactionRequest transactionRequest = buildTransaction();
 		transactionRequest.setAmount(reserve.floatValue());
 		return sendTransaction(transactionRequest,urlZoop,"transactions");
+	}
+
+	private TransactionResponse sendTransaction(TransactionRequest TransactionRequest,String url,String param) {
+		HttpHeaders headers = new HttpHeaders();
+		headers.set("Authorization", "Basic enBrX3Rlc3RfRXpDa3pGRktpYkdRVTZIRnE3RVlWdXhJOg==");
+		headers.set("Content-Type", "application/json");
+
+		HttpEntity<TransactionRequest> request = new HttpEntity<TransactionRequest>(TransactionRequest, headers);
+
+		ResponseEntity<TransactionResponse> quote = restTemplate.postForEntity(url, request,
+				TransactionResponse.class, param);
+
+		return quote.getBody();
 	}
 	
 	private TransactionRequest buildTransaction() {
