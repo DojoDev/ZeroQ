@@ -1,5 +1,7 @@
 package com.movile.zeroQ.event.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,9 +15,11 @@ public class MyGroupService {
 	private GroupRepository eventRepository;
 	
 	public void insertGroup(MyGroup group) {
-
 		eventRepository.save(group);
+	}
 
+	public List<MyGroup> listAll() {
+		return eventRepository.findAll();
 	}
 
 }

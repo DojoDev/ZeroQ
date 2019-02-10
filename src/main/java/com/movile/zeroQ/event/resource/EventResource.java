@@ -22,14 +22,15 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.movile.zeroQ.event.domain.Event;
 import com.movile.zeroQ.event.domain.MyGroup;
 import com.movile.zeroQ.event.service.EventService;
+import com.movile.zeroQ.event.service.MyGroupService;
 
 @RestController
 @RequestMapping("/events")
 @CrossOrigin
 public class EventResource {
 
-	@Autowired
-	private EventService eventService;
+	@Autowired private EventService eventService;
+	@Autowired private MyGroupService myGroupService;
 	
 	@GetMapping
 	public List<Event> list() {
@@ -71,14 +72,20 @@ public class EventResource {
 		return ResponseEntity.created(uri).build();
 	}
 	
-	@PostMapping
+	@PostMapping("/groups")
 	public ResponseEntity<String> createGroup(@Valid @RequestBody MyGroup group, BindingResult result){
 		
 		if(result.hasErrors()) {
 			return ResponseEntity.badRequest().build();
 		}
-
+		myGroupService.insertGroup(group);
+		
 		return ResponseEntity.ok().build();
+	}
+	
+	@GetMapping("/groups")
+	public List<MyGroup> listGroup(){
+		return myGroupService.listAll();
 	}
 	
 }

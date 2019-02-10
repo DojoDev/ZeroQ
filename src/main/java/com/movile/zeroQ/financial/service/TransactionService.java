@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.google.common.collect.Lists;
+import com.movile.zeroQ.financial.domain.Status;
 import com.movile.zeroQ.financial.domain.Transaction;
 import com.movile.zeroQ.financial.domain.Wallet;
 import com.movile.zeroQ.financial.repository.ItemTransactionRepository;
@@ -59,8 +60,9 @@ public class TransactionService {
 	}
 
 	public void finalizeTransaction(Transaction transaction) {
-		transactionTask.finalizeTransaction(transaction.valueConsumed());
-		
+		transactionTask.finalizeTransaction(transaction.getExternalId(),transaction.valueConsumed());
+		transaction.getItens().forEach(it -> it.setStatus(Status.PAGA));
+		save(transaction);
 	}
 
 }
