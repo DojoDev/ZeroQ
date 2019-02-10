@@ -15,6 +15,9 @@
 		AB2A4444220FAA8000FF6AC8 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A4443220FAA8000FF6AC8 /* TransactionViewController.swift */; };
 		AB2A4446220FBA7700FF6AC8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A4445220FBA7700FF6AC8 /* UIViewExtension.swift */; };
 		AB2A4448220FBC6400FF6AC8 /* Credit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2A4447220FBC6400FF6AC8 /* Credit.storyboard */; };
+		AB36B1AF2210070C000F6C7D /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB36B1AE2210070C000F6C7D /* Configuration.storyboard */; };
+		AB36B1B12210076F000F6C7D /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36B1B02210076F000F6C7D /* ConfigurationViewController.swift */; };
+		AB36B1B322101E55000F6C7D /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36B1B222101E55000F6C7D /* UILabelExtension.swift */; };
 		AB75CEB9220F622E0054EFEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEB8220F622E0054EFEA /* AppDelegate.swift */; };
 		AB75CEBB220F622E0054EFEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEBA220F622E0054EFEA /* ViewController.swift */; };
 		AB75CEBE220F622E0054EFEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CEBC220F622E0054EFEA /* Main.storyboard */; };
@@ -112,6 +115,9 @@
 		AB2A4443220FAA8000FF6AC8 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		AB2A4445220FBA7700FF6AC8 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AB2A4447220FBC6400FF6AC8 /* Credit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credit.storyboard; sourceTree = "<group>"; };
+		AB36B1AE2210070C000F6C7D /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
+		AB36B1B02210076F000F6C7D /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		AB36B1B222101E55000F6C7D /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		AB75CEB5220F622E0054EFEA /* ZeroQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB75CEB8220F622E0054EFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB75CEBA220F622E0054EFEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -228,6 +234,15 @@
 			path = Transaction;
 			sourceTree = "<group>";
 		};
+		AB36B1AC221006E5000F6C7D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AB36B1AE2210070C000F6C7D /* Configuration.storyboard */,
+				AB36B1B02210076F000F6C7D /* ConfigurationViewController.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		AB75CEAC220F622E0054EFEA = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +305,7 @@
 		AB75CED9220F62B50054EFEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB36B1AC221006E5000F6C7D /* Configuration */,
 				ABB9EE50220FE3ED00338C0F /* Purchase */,
 				ABB9EE4B220FDEC000338C0F /* Payment */,
 				ABB9EE46220FCF5F00338C0F /* Group */,
@@ -333,6 +349,7 @@
 				AB75CF01220F6B3A0054EFEA /* Identifiable.swift */,
 				AB2A4445220FBA7700FF6AC8 /* UIViewExtension.swift */,
 				ABB9EE42220FC16100338C0F /* UIButtonExtension.swift */,
+				AB36B1B222101E55000F6C7D /* UILabelExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -629,6 +646,7 @@
 				AB75CF20220F7D5D0054EFEA /* Event.storyboard in Resources */,
 				AB75CF52220F858D0054EFEA /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				AB75CF4B220F858D0054EFEA /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				AB36B1AF2210070C000F6C7D /* Configuration.storyboard in Resources */,
 				AB75CF50220F858D0054EFEA /* Montserrat-ExtraLight.ttf in Resources */,
 				AB75CF43220F858D0054EFEA /* Montserrat-Italic.ttf in Resources */,
 				AB75CEC0220F622F0054EFEA /* Assets.xcassets in Resources */,
@@ -753,8 +771,10 @@
 				ABB9EE4F220FDF3C00338C0F /* PaymentViewController.swift in Sources */,
 				AB75CF0C220F6C290054EFEA /* BaseService.swift in Sources */,
 				AB75CEDD220F63450054EFEA /* Transaction.swift in Sources */,
+				AB36B1B12210076F000F6C7D /* ConfigurationViewController.swift in Sources */,
 				AB75CF15220F75080054EFEA /* TransactionService.swift in Sources */,
 				AB75CEF6220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift in Sources */,
+				AB36B1B322101E55000F6C7D /* UILabelExtension.swift in Sources */,
 				ABB9EE5A220FF2A800338C0F /* CreditCardViewController.swift in Sources */,
 				AB75CF2C220F81A50054EFEA /* LoginViewController.swift in Sources */,
 				ABB9EE4A220FD5B300338C0F /* GroupViewController.swift in Sources */,

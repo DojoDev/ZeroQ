@@ -47,7 +47,7 @@ Montserrat-ThinItalic.ttf</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>CreditCard</string>
+	<string>Configuration</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

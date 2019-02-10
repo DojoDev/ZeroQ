@@ -18,23 +18,36 @@ class CreditCardViewController: UIViewController, PayCardsRecognizerPlatformDele
     @IBOutlet weak var cardNumberTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     var recognizer: PayCardsRecognizer!
+    static func instance()-> CreditCardViewController {
+        return UIStoryboard.storyboard(.creditCard).instantiateViewController() as CreditCardViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        cvvTextField.addBottomBorderWithColor(color: UIColor.black, height: 2)
-        expirationTextField.addBottomBorderWithColor(color: UIColor.black, height: 2)
-        cardNumberTextField.addBottomBorderWithColor(color: UIColor.black, height: 2)
-        nameTextField.addBottomBorderWithColor(color: UIColor.black, height: 2)
-        recognizer = PayCardsRecognizer(delegate: self, resultMode: .async, container: self.view, frameColor: .green)
+        setupView()
+    }
+    
+    private func setupView() {
+        self.title = "CARTÃO DE CRÉDITO"
+        DispatchQueue.main.async {
+            self.cvvTextField.addBottomBorderWithColor(color: UIColor.black, height: 1)
+            self.expirationTextField.addBottomBorderWithColor(color: UIColor.black, height: 1)
+            self.cardNumberTextField.addBottomBorderWithColor(color: UIColor.black, height: 1)
+            self.nameTextField.addBottomBorderWithColor(color: UIColor.black, height: 1)
+            self.recognizer = PayCardsRecognizer(delegate: self, resultMode: .async, container: self.view, frameColor: .green)
+            
+            self.readCardButton.addCornerRadius(25)
+            self.readCardButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
+            self.readCardButton.setTitle(String.fontAwesomeIcon(name: .camera), for: .normal)
+            self.readCardButton.setTitleColor(UIColor.white, for: .normal)
+        }
         
-        readCardButton.addCornerRadius(25)
-        readCardButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
-        readCardButton.setTitle(String.fontAwesomeIcon(name: .camera), for: .normal)
-        readCardButton.setTitleColor(UIColor.white, for: .normal)
     }
     
     @IBAction func readCard(_ sender: Any) {
         recognizer.startCamera()
     }
+    
     func payCardsRecognizer(_ payCardsRecognizer: PayCardsRecognizer, didRecognize result: PayCardsRecognizerResult) {
        
         cardNumberTextField.text = result.recognizedNumber
@@ -46,3 +59,5 @@ class CreditCardViewController: UIViewController, PayCardsRecognizerPlatformDele
          recognizer.stopCamera()
     }
 }
+
+extension CreditCardViewController: Identifiable {}

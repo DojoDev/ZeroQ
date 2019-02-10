@@ -13,6 +13,7 @@ import UIKit
 class TransactionViewController: UIViewController {
     @IBOutlet weak var eventImageView: UIImageView!
     
+    @IBOutlet weak var spendLimitButton: UILabel!
     @IBOutlet weak var createGroupButton: UIButton!
     @IBOutlet weak var buyContainer: UIView!
     @IBOutlet weak var payContainer: UIView!
@@ -20,32 +21,64 @@ class TransactionViewController: UIViewController {
     @IBOutlet weak var buttonRight: UIButton!
     @IBOutlet weak var buyImageView: UIImageView!
     @IBOutlet weak var payImageView: UIImageView!
-   
+    var lastButtonState: UIControl.State?
     static func instance()-> TransactionViewController {
         return UIStoryboard.storyboard(.transaction).instantiateViewController() as TransactionViewController
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createGroupButton.layer.cornerRadius = 25
+        setupView()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(TransactionViewController.defineASpendingLimit))
+        spendLimitButton.addGestureRecognizer(tap)
+        
+        let tapBuy = UITapGestureRecognizer(target: self, action: #selector(TransactionViewController.defineASpendingLimit))
+        buyContainer.addGestureRecognizer(tap)
+        
+        let tapPay = UITapGestureRecognizer(target: self, action: #selector(TransactionViewController.defineASpendingLimit))
+        payContainer.addGestureRecognizer(tap)
+    }
+    
+    private func setupView() {
+        spendLimitButton.underline()
+        payContainer.isUserInteractionEnabled = false
+        buyContainer.isUserInteractionEnabled = false
+        createGroupButton.layer.cornerRadius = 20
         buyImageView.image = UIImage(named: "soda")
         payImageView.image = UIImage(named: "pay")
         eventImageView.layer.cornerRadius = 10
         buyContainer.layer.cornerRadius = 10
         payContainer.layer.cornerRadius = 10
-        buttonLeft.rounded()
-        buttonRight.rounded()
-        
-        buttonLeft.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
-        buttonLeft.setTitle(String.fontAwesomeIcon(name: .arrowLeft), for: .normal)
-        
-        buttonRight.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
-        buttonRight.setTitle(String.fontAwesomeIcon(name: .arrowRight), for: .normal)
-
     }
     
+    @objc func defineASpendingLimit(sender:UITapGestureRecognizer) {
+        
+        let instance = CreditViewController.instance()
+        instance.addLimitDelegate = self
+        self.navigationController?.pushViewController(instance, animated: true)
+        
+    }
     @IBAction func createGroupe(_ sender: Any) {
+        let instance = GroupViewController.instance()
+        self.navigationController?.pushViewController(instance, animated: true)
     }
 }
 
 extension TransactionViewController: Identifiable {}
+
+extension TransactionViewController: AddLimiteDelegate {
+    func addLimite(_ amount: String?) {
+        DispatchQueue.main.async {
+            self.spendLimitButton.text = "Total Gasto: R$ 0"
+            self.spendLimitButton.isUserInteractionEnabled = false
+            self.createGroupButton.isHidden = false
+            let backColor = UIColor.init(displayP3Red: 1, green: 1, blue: 1, alpha: 0.8)
+            self.payContainer.isUserInteractionEnabled = true
+            self.buyContainer.isUserInteractionEnabled = true
+            self.buyContainer.backgroundColor = backColor
+            self.payContainer.backgroundColor = backColor
+            self.buyImageView.backgroundColor = backColor
+            self.payImageView.backgroundColor = backColor
+        }
+    }
+}

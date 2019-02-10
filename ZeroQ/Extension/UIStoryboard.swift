@@ -13,6 +13,14 @@ extension UIStoryboard {
     struct Storyboard {
         let name: String
         static var transaction: Storyboard { return Storyboard(name: "Transaction")}
+        static var events: Storyboard { return Storyboard(name: "Event")}
+        static var creditCard: Storyboard { return Storyboard(name: "CreditCard")}
+        
+        static var creditLimit: Storyboard { return Storyboard(name: "Credit")}
+        static var group: Storyboard { return Storyboard(name: "Group")}
+
+        
+        
     
     }
     

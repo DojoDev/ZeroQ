@@ -8,15 +8,35 @@
 
 import UIKit
 
+protocol AddLimiteDelegate: class {
+    func addLimite(_ amount: String?)
+}
+
 class CreditViewController: UIViewController {
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var firstLayerContainerView: UIView!
     @IBOutlet weak var spedingLimitTextField: UITextField!
     @IBOutlet weak var buttonLeft: UIButton!
     @IBOutlet weak var eventImageView: UIImageView!
-    
     @IBOutlet weak var submitButton: UIButton!
+    weak var addLimitDelegate: AddLimiteDelegate?
+    
+    static func instance()-> CreditViewController {
+        return UIStoryboard.storyboard(.creditLimit).instantiateViewController() as CreditViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+    
+    @IBAction func addLimit(_ sender: Any) {
+        addLimitDelegate?.addLimite(spedingLimitTextField.text)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func setupView() {
+        containerView.addCornerRadius(10)
         spedingLimitTextField.addBottomBorderWithColor(color: UIColor.black, height: 2)
         submitButton.roundedButton(arrow: .arrowRight)
         buttonLeft.roundedButton(arrow: .arrowLeft)
@@ -24,3 +44,5 @@ class CreditViewController: UIViewController {
         firstLayerContainerView.layer.cornerRadius = 10
     }
 }
+
+extension CreditViewController: Identifiable {}

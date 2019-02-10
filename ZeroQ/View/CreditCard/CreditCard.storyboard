@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hSU-3i-Pr3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,61 +17,61 @@
         <!--Credit Card View Controller-->
         <scene sceneID="yqV-RB-9P7">
             <objects>
-                <viewController id="hSU-3i-Pr3" customClass="CreditCardViewController" customModule="ZeroQ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreditCardViewController" id="hSU-3i-Pr3" customClass="CreditCardViewController" customModule="ZeroQ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjd-fe-HBf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Sb4-Fq-bYd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Cw6-Ah-EgW">
-                                <rect key="frame" x="29" y="323" width="317" height="236"/>
+                                <rect key="frame" x="29" y="331" width="317" height="232"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4m-Ma-zq8">
-                                        <rect key="frame" x="0.0" y="0.0" width="53" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="20"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95b-EQ-Stv">
-                                        <rect key="frame" x="0.0" y="33" width="317" height="17"/>
+                                        <rect key="frame" x="0.0" y="32" width="317" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero do cartão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwU-av-nDh">
-                                        <rect key="frame" x="0.0" y="62" width="156.5" height="21"/>
+                                        <rect key="frame" x="0.0" y="61" width="138" height="20"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uEn-gZ-WdJ">
-                                        <rect key="frame" x="0.0" y="95" width="317" height="17"/>
+                                        <rect key="frame" x="0.0" y="93" width="317" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbv-ap-zt1">
-                                        <rect key="frame" x="0.0" y="124" width="73.5" height="21"/>
+                                        <rect key="frame" x="0.0" y="122" width="65" height="20"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSr-Mi-K5X">
-                                        <rect key="frame" x="0.0" y="157" width="317" height="17"/>
+                                        <rect key="frame" x="0.0" y="154" width="317" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJq-ch-qP3">
-                                        <rect key="frame" x="0.0" y="186" width="36" height="21"/>
+                                        <rect key="frame" x="0.0" y="183" width="33.5" height="20"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digite o cvv do seu cartão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6H-UC-tZ9">
-                                        <rect key="frame" x="0.0" y="219" width="317" height="17"/>
+                                        <rect key="frame" x="0.0" y="215" width="317" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -85,7 +85,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-card" translatesAutoresizingMaskIntoConstraints="NO" id="Hf3-Bu-zpd">
-                                <rect key="frame" x="0.0" y="72" width="375" height="202"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="202"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="kW2-Fe-02x"/>
                                     <constraint firstAttribute="height" constant="202" id="lVa-67-WdW"/>
@@ -114,13 +114,14 @@
                             <constraint firstItem="Hf3-Bu-zpd" firstAttribute="leading" secondItem="wOk-h8-uKu" secondAttribute="leading" id="Phq-NG-uPY"/>
                             <constraint firstItem="Sb4-Fq-bYd" firstAttribute="top" secondItem="wOk-h8-uKu" secondAttribute="top" id="Pv3-f8-9cE"/>
                             <constraint firstItem="wOk-h8-uKu" firstAttribute="trailing" secondItem="Sb4-Fq-bYd" secondAttribute="trailing" id="aez-4F-f07"/>
-                            <constraint firstItem="Hf3-Bu-zpd" firstAttribute="top" secondItem="wOk-h8-uKu" secondAttribute="top" constant="52" id="c1V-gg-kWY"/>
+                            <constraint firstItem="Hf3-Bu-zpd" firstAttribute="top" secondItem="wOk-h8-uKu" secondAttribute="top" constant="16" id="c1V-gg-kWY"/>
                             <constraint firstItem="Cw6-Ah-EgW" firstAttribute="top" secondItem="Hf3-Bu-zpd" secondAttribute="bottom" constant="49" id="mdt-Ex-uEa"/>
                             <constraint firstItem="zQf-Wc-EK2" firstAttribute="leading" secondItem="wOk-h8-uKu" secondAttribute="leading" constant="129" id="wCG-b3-ims"/>
                             <constraint firstItem="wOk-h8-uKu" firstAttribute="bottom" secondItem="zQf-Wc-EK2" secondAttribute="bottom" constant="30" id="z1q-nw-CFU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wOk-h8-uKu"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="cardNumberTextField" destination="uEn-gZ-WdJ" id="Eku-l9-vFu"/>
                         <outlet property="cvvTextField" destination="Y6H-UC-tZ9" id="HTZ-94-n5d"/>

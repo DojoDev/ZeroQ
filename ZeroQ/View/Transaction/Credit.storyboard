@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +17,7 @@
         <!--Credit View Controller-->
         <scene sceneID="Uub-0R-TrG">
             <objects>
-                <viewController id="igy-Ad-nuD" customClass="CreditViewController" customModule="ZeroQ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreditViewController" id="igy-Ad-nuD" customClass="CreditViewController" customModule="ZeroQ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X4I-r6-DJX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="101" id="AqR-H8-aKO"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouL-P6-rxr">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouL-P6-rxr">
                                 <rect key="frame" x="40" y="32" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="PtU-uN-wbx"/>
@@ -48,7 +47,7 @@
                                     <constraint firstAttribute="height" constant="100" id="jib-59-xZ8"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOLLAPALOZA" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZP-Yk-l9z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROCK IN RIO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZP-Yk-l9z">
                                 <rect key="frame" x="16" y="154" width="343" height="21"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -68,7 +67,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19h-Sq-XXa">
                                         <rect key="frame" x="8" y="321" width="50" height="50"/>
@@ -79,6 +78,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addLimit:" destination="igy-Ad-nuD" eventType="touchUpInside" id="qlj-qh-uPm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98420697450000005" green="0.69607317449999995" blue="0.71198093890000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -117,6 +119,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonLeft" destination="ouL-P6-rxr" id="cG0-gZ-lm1"/>
+                        <outlet property="containerView" destination="e9N-rC-30k" id="grT-Dk-vfI"/>
                         <outlet property="eventImageView" destination="Z8c-VM-hFA" id="rY2-VH-u7p"/>
                         <outlet property="firstLayerContainerView" destination="0U5-Jk-kGs" id="OJo-KM-uzZ"/>
                         <outlet property="spedingLimitTextField" destination="bgS-BG-AA9" id="elr-i6-rif"/>

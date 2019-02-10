@@ -16,6 +16,11 @@ class GroupViewController: UIViewController {
     @IBOutlet weak var createGroupButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var groupNameTextField: UITextField!
+    
+    static func instance()-> GroupViewController {
+        return UIStoryboard.storyboard(.group).instantiateViewController() as GroupViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createGroupButton.addCornerRadius(25)
@@ -30,3 +35,5 @@ class GroupViewController: UIViewController {
     }
     
 }
+
+extension GroupViewController: Identifiable {}
