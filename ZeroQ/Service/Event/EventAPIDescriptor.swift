@@ -9,6 +9,11 @@
 import Foundation
 import Moya
 
+
+enum EventRoute: String {
+    case events
+}
+
 enum EventAPI {
     case getAll
     case getBy(_ id: String)
@@ -36,9 +41,9 @@ extension EventAPI : TargetType {
     var path: String {
         switch self {
         case .getAll:
-            return "base"
+            return EventRoute.events.rawValue
         case .getBy(let id):
-            return "base/\(id)"
+            return "\(EventRoute.events.rawValue)/\(id)"
         }
     }
     

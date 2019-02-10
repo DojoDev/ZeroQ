@@ -20,8 +20,15 @@ class ZeroQTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        EventService().getAll(completion: { response in
+            switch response {
+            case .success(let event):
+                print("event \(event)")
+            case .failure(let error):
+                print(error)
+            }
+            print(response)
+        })
     }
 
     func testPerformanceExample() {

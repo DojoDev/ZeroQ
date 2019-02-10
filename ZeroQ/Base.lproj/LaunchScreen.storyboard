@@ -18,7 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zeroQLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bR6-9j-hz3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Kat-TU-esX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bR6-9j-hz3">
                                 <rect key="frame" x="57.5" y="215.5" width="260" height="236"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="236" id="Fq3-ml-C40"/>
@@ -27,10 +30,14 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.6705882352941176" green="0.85862571001052856" blue="0.80835026502609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bR6-9j-hz3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="991-27-nMD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kat-TU-esX" secondAttribute="trailing" id="LAE-NR-mdl"/>
+                            <constraint firstItem="Kat-TU-esX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OOr-SM-fa9"/>
+                            <constraint firstItem="Kat-TU-esX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VHW-6y-wCn"/>
                             <constraint firstItem="bR6-9j-hz3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wa9-za-nct"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kat-TU-esX" secondAttribute="bottom" id="qRX-H3-Ado"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -41,6 +48,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="zeroQLogo" width="447" height="406"/>
+        <image name="background" width="750" height="1334"/>
+        <image name="logo" width="450" height="411"/>
     </resources>
 </document>

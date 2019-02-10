@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="562" id="KGk-i7-Jjw" customClass="EventCell" customModule="ZeroQ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="269.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rockInRio" translatesAutoresizingMaskIntoConstraints="NO" id="6yf-k6-bic">
+                        <rect key="frame" x="20" y="11" width="266" height="248"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="248" id="F4D-AI-G4D"/>
+                            <constraint firstAttribute="width" constant="266" id="o2J-Op-28f"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZL-cN-yEa">
+                        <rect key="frame" x="6" y="167" width="289" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock in RIo" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1s-V7-0PK">
+                                <rect key="frame" x="30" y="25" width="97.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HKN-eY-QB1">
+                                <rect key="frame" x="1231" y="15" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Zwp-7Y-dvd"/>
+                                    <constraint firstAttribute="width" constant="40" id="dGI-CR-L01"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VSr-Rv-7fJ">
+                                <rect key="frame" x="268" y="15" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="63o-hk-hyH"/>
+                                    <constraint firstAttribute="width" secondItem="VSr-Rv-7fJ" secondAttribute="height" multiplier="1:1" id="BeT-EO-ZqJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="Yxu-E7-QUx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98420697450000005" green="0.69607317449999995" blue="0.71198093890000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HKN-eY-QB1" firstAttribute="centerY" secondItem="S1s-V7-0PK" secondAttribute="centerY" id="0Fh-2x-X3X"/>
+                            <constraint firstItem="HKN-eY-QB1" firstAttribute="top" secondItem="UZL-cN-yEa" secondAttribute="top" constant="15" id="AU1-Ip-lxn"/>
+                            <constraint firstItem="VSr-Rv-7fJ" firstAttribute="top" secondItem="UZL-cN-yEa" secondAttribute="bottom" constant="-55" id="GQc-S7-aed"/>
+                            <constraint firstItem="VSr-Rv-7fJ" firstAttribute="leading" secondItem="UZL-cN-yEa" secondAttribute="trailing" constant="-21" id="Pqs-pz-nv0"/>
+                            <constraint firstItem="S1s-V7-0PK" firstAttribute="top" secondItem="UZL-cN-yEa" secondAttribute="top" constant="25" id="VHm-dN-9Op"/>
+                            <constraint firstAttribute="height" constant="70" id="gjT-Xg-xN8"/>
+                            <constraint firstItem="S1s-V7-0PK" firstAttribute="leading" secondItem="UZL-cN-yEa" secondAttribute="leading" constant="30" id="jk4-ko-ZEj"/>
+                            <constraint firstItem="HKN-eY-QB1" firstAttribute="leading" secondItem="UZL-cN-yEa" secondAttribute="leading" constant="1231" id="uae-t3-Z0o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="6yf-k6-bic" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="2xR-MH-rma"/>
+                    <constraint firstItem="6yf-k6-bic" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8zr-KS-Q6i"/>
+                    <constraint firstAttribute="bottom" secondItem="6yf-k6-bic" secondAttribute="bottom" constant="10.5" id="IcM-QA-n1h"/>
+                    <constraint firstItem="UZL-cN-yEa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="Qdi-If-Xle"/>
+                    <constraint firstItem="UZL-cN-yEa" firstAttribute="top" secondItem="6yf-k6-bic" secondAttribute="bottom" constant="-92" id="nKc-KG-Rg1"/>
+                    <constraint firstAttribute="trailing" secondItem="6yf-k6-bic" secondAttribute="trailing" constant="34" id="w0l-rN-Fmi"/>
+                    <constraint firstAttribute="trailing" secondItem="UZL-cN-yEa" secondAttribute="trailing" constant="25" id="wLR-ae-4t8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="eventContainerInfo" destination="UZL-cN-yEa" id="jmf-J1-icN"/>
+                <outlet property="eventImageView" destination="6yf-k6-bic" id="HHW-Xz-DXn"/>
+                <outlet property="likeImageView" destination="VSr-Rv-7fJ" id="4Ac-wU-chK"/>
+            </connections>
+            <point key="canvasLocation" x="376" y="-123.23838080959521"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rockInRio" width="1200" height="800"/>
+    </resources>
+</document>
