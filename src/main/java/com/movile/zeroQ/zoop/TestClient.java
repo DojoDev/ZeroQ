@@ -4,7 +4,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import com.movile.zeroQ.zoop.request.TransactionRequest;
+import com.movile.zeroQ.zoop.request.domain.TransactionRequest;
 import com.movile.zeroQ.zoop.response.TransactionResponse;
 
 public class TestClient {
@@ -14,7 +14,7 @@ public class TestClient {
 	public void method() {
 		TransactionRequest request2 = new TransactionRequest();
 		request2.setAmount(1000.00f);
-		request2.setCapture("true");
+		request2.setCapture("false");
 		request2.setCurrency("BRL");
 		request2.setCustomer("138d7c62a6434cae906bfbed720a3e7a");
 		request2.setDescription("Teste transação");

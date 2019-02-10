@@ -1,9 +1,7 @@
 package com.movile.zeroQ.financial.service;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
@@ -11,29 +9,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.movile.zeroQ.financial.domain.Wallet;
-import com.movile.zeroQ.financial.repository.TransactionRepository;
 import com.movile.zeroQ.financial.repository.WalletRepository;
 
 @Service
 public class WalletService {
 
 	@Autowired private WalletRepository walletRepository;
-	@Autowired private TransactionRepository transactionRepository;
 	
 	public List<Wallet> listAll() {
-		return walletRepository.findAll().stream().peek(w ->{
-			w.setTransactions(transactionRepository.findByWallet(w));
-		}).collect(Collectors.toList());
+		return walletRepository.findAll();
 	}
 
 	public Optional<Wallet> findById(Integer id) {
-		Optional<Wallet> wallet =  walletRepository.findById(id);
-		
-		wallet.ifPresent(w ->{
-			w.setTransactions(transactionRepository.findByWallet(w));
-		});
-		
-		return wallet;
+		return walletRepository.findById(id);
 	}
 
 	public List<Wallet> findByName(String name) {

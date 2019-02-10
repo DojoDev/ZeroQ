@@ -1,17 +1,15 @@
 package com.movile.zeroQ.financial.domain;
 
-import java.math.BigDecimal;
+import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,15 +23,12 @@ import lombok.Setter;
 public class Transaction {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="id_transaction")
 	private Integer id;
-	private String description;
-	private BigDecimal value;
-	@Enumerated(EnumType.STRING)
-	private Status status;
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "transaction")
+	private List<Wallet> wallets;
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "transaction",cascade=CascadeType.ALL)
+	private List<ItemTransaction> itens;
 	
-	@ManyToOne
-	@JoinColumn(name = "id_wallet")
-	@LazyCollection(LazyCollectionOption.TRUE)
-	private Wallet wallet;
 }
