@@ -30,7 +30,6 @@ class GroupViewController: UIViewController {
         let instance = PurchaseViewController.instance()
         self.navigationController?.pushViewController(instance, animated: true)
     }
-    
 }
 
 extension GroupViewController {
@@ -43,4 +42,5 @@ extension GroupViewController {
         buttonAdd.rounded()
     }
 }
+
 extension GroupViewController: Identifiable {}

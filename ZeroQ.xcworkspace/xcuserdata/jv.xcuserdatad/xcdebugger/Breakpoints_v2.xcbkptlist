@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZeroQ/View/Transaction/TransactionViewController.swift"
-            timestampString = "571496208.337254"
+            timestampString = "571496902.447811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "addLimite(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZeroQ/View/Transaction/TransactionViewController.swift"
-            timestampString = "571496208.338328"
+            timestampString = "571496902.448669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "defineASpendingLimit(sender:)"
             landmarkType = "7">
          </BreakpointContent>

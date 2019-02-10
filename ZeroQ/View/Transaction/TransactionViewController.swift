@@ -22,7 +22,6 @@ class TransactionViewController: UIViewController {
     @IBOutlet weak var payImageView: UIImageView!
     
     var hasCredit = false
-    var lastButtonState: UIControl.State?
     static func instance()-> TransactionViewController {
         return UIStoryboard.storyboard(.transaction).instantiateViewController() as TransactionViewController
     }
@@ -34,21 +33,11 @@ class TransactionViewController: UIViewController {
     }
   
     @objc func openPurchase() {
-        if hasCredit {
-            let instance = PurchaseViewController.instance()
-            self.navigationController?.pushViewController(instance, animated: true)
-        }else {
-            validationAlert()
-        }
+        redirectValidation(PurchaseViewController.instance())
     }
     
     @objc func openPay() {
-        if hasCredit {
-            let instance = PaymentViewController.instance()
-            self.navigationController?.pushViewController(instance, animated: true)
-        }else {
-            validationAlert()
-        }
+        redirectValidation(PaymentViewController.instance())
     }
     
     @objc func defineASpendingLimit(sender:UITapGestureRecognizer) {
@@ -60,6 +49,14 @@ class TransactionViewController: UIViewController {
     @IBAction func createGroupe(_ sender: Any) {
         let instance = GroupViewController.instance()
         self.navigationController?.pushViewController(instance, animated: true)
+    }
+    
+    private func redirectValidation(_ controller: UIViewController){
+        if hasCredit {
+            self.navigationController?.pushViewController(controller, animated: true)
+        }else {
+            validationAlert()
+        }
     }
     
     private func validationAlert(){
