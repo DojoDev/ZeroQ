@@ -83,6 +83,7 @@
 		ABB9EE54220FE43400338C0F /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE53220FE43400338C0F /* PurchaseViewController.swift */; };
 		ABB9EE57220FE51700338C0F /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE55220FE51700338C0F /* PurchaseCell.swift */; };
 		ABB9EE58220FE51700338C0F /* PurchaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB9EE56220FE51700338C0F /* PurchaseCell.xib */; };
+		ABB9EE5A220FF2A800338C0F /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE59220FF2A800338C0F /* CreditCardViewController.swift */; };
 		D46DA019D5A98C78BB82C45B /* Pods_ZeroQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */; };
 		E3F7A3C1C8C71C1A4BA88C05 /* Pods_ZeroQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */; };
 /* End PBXBuildFile section */
@@ -183,6 +184,7 @@
 		ABB9EE53220FE43400338C0F /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		ABB9EE55220FE51700338C0F /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		ABB9EE56220FE51700338C0F /* PurchaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseCell.xib; sourceTree = "<group>"; };
+		ABB9EE59220FF2A800338C0F /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
 		F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQ.debug.xcconfig"; path = "Target Support Files/Pods-ZeroQ/Pods-ZeroQ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -424,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				AB75CF24220F7D8C0054EFEA /* CreditCard.storyboard */,
+				ABB9EE59220FF2A800338C0F /* CreditCardViewController.swift */,
 			);
 			path = CreditCard;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				TargetAttributes = {
 					AB75CEB4220F622E0054EFEA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					AB75CEC8220F622F0054EFEA = {
 						CreatedOnToolsVersion = 10.1;
@@ -678,6 +682,7 @@
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${PODS_ROOT}/PayCardsRecognizer/Source/PayCardsRecognizer.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -688,6 +693,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PayCardsRecognizer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,6 +755,7 @@
 				AB75CEDD220F63450054EFEA /* Transaction.swift in Sources */,
 				AB75CF15220F75080054EFEA /* TransactionService.swift in Sources */,
 				AB75CEF6220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift in Sources */,
+				ABB9EE5A220FF2A800338C0F /* CreditCardViewController.swift in Sources */,
 				AB75CF2C220F81A50054EFEA /* LoginViewController.swift in Sources */,
 				ABB9EE4A220FD5B300338C0F /* GroupViewController.swift in Sources */,
 				AB2A4435220F930200FF6AC8 /* SingUpViewController.swift in Sources */,
@@ -929,6 +936,7 @@
 			baseConfigurationReference = F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MX68PC94Q;
 				INFOPLIST_FILE = "$(SRCROOT)/ZeroQ/Resources/Info.plist";
@@ -939,6 +947,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackthon.movile.ZeroQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -949,6 +959,7 @@
 			baseConfigurationReference = 4004348852F2ACE60B6E8A10 /* Pods-ZeroQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MX68PC94Q;
 				INFOPLIST_FILE = "$(SRCROOT)/ZeroQ/Resources/Info.plist";
@@ -959,6 +970,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackthon.movile.ZeroQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

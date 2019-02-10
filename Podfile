@@ -7,6 +7,7 @@ target 'ZeroQ' do
   pod 'Moya'
   pod 'FontAwesome.swift'
   pod 'IQKeyboardManagerSwift'
+  pod 'PayCardsRecognizer'
   # Pods for ZeroQ
 
   target 'ZeroQTests' do
