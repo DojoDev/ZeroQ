@@ -76,6 +76,7 @@
 		ABB9EE43220FC16100338C0F /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE42220FC16100338C0F /* UIButtonExtension.swift */; };
 		ABB9EE45220FCEB000338C0F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE44220FCEB000338C0F /* Configuration.swift */; };
 		ABB9EE48220FD11000338C0F /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB9EE47220FD11000338C0F /* Group.storyboard */; };
+		ABB9EE4A220FD5B300338C0F /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE49220FD5B300338C0F /* GroupViewController.swift */; };
 		D46DA019D5A98C78BB82C45B /* Pods_ZeroQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */; };
 		E3F7A3C1C8C71C1A4BA88C05 /* Pods_ZeroQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */; };
 /* End PBXBuildFile section */
@@ -169,6 +170,7 @@
 		ABB9EE42220FC16100338C0F /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		ABB9EE44220FCEB000338C0F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		ABB9EE47220FD11000338C0F /* Group.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Group.storyboard; sourceTree = "<group>"; };
+		ABB9EE49220FD5B300338C0F /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQ.debug.xcconfig"; path = "Target Support Files/Pods-ZeroQ/Pods-ZeroQ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -462,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				ABB9EE47220FD11000338C0F /* Group.storyboard */,
+				ABB9EE49220FD5B300338C0F /* GroupViewController.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -708,6 +711,7 @@
 				AB75CF15220F75080054EFEA /* TransactionService.swift in Sources */,
 				AB75CEF6220F69B00054EFEA /* ShopkeeperAPIDescriptor.swift in Sources */,
 				AB75CF2C220F81A50054EFEA /* LoginViewController.swift in Sources */,
+				ABB9EE4A220FD5B300338C0F /* GroupViewController.swift in Sources */,
 				AB2A4435220F930200FF6AC8 /* SingUpViewController.swift in Sources */,
 				AB75CF00220F6AD00054EFEA /* UIStoryboard.swift in Sources */,
 				AB75CF02220F6B3A0054EFEA /* Identifiable.swift in Sources */,
@@ -888,6 +892,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MX68PC94Q;
 				INFOPLIST_FILE = "$(SRCROOT)/ZeroQ/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -907,6 +912,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MX68PC94Q;
 				INFOPLIST_FILE = "$(SRCROOT)/ZeroQ/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

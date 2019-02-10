@@ -13,4 +13,8 @@ extension UIView {
     func rounded() {
         self.layer.cornerRadius = self.frame.height/2
     }
+    
+    func addCornerRadius(_ size: CGFloat) {
+        self.layer.cornerRadius = size
+    }
 }
