@@ -31,20 +31,27 @@ class CreditViewController: UIViewController {
     }
     
     @IBAction func addLimit(_ sender: Any) {
-        addLimitDelegate?.addLimite(spedingLimitTextField.text)
+        if let limit = spedingLimitTextField.text, !limit.isEmpty {
+            addLimitDelegate?.addLimite(limit)
         self.navigationController?.popViewController(animated: true)
+        }else{
+            Alert.defaultAlert(for: self, title: "Campo Vazio", message: "Você precisa definir seu limite de gastos.")
+        }
     }
 }
 
 extension CreditViewController {
     private func setupView() {
-        containerView.addCornerRadius(10)
-        spedingLimitTextField.addBottomBorderWithColor(color: UIColor.black, height: 2)
-        submitButton.roundedButton(icon: .arrowRight)
-        buttonLeft.roundedButton(icon: .arrowLeft)
-        eventImageView.layer.cornerRadius = 10
-        firstLayerContainerView.layer.cornerRadius = 10
+        DispatchQueue.main.async {
+            self.containerView.addCornerRadius(10)
+            self.spedingLimitTextField.addBottomBorderWithColor(color: UIColor.black, height: 1)
+            self.submitButton.roundedButton(icon: .arrowRight)
+            self.buttonLeft.roundedButton(icon: .arrowLeft)
+            self.eventImageView.layer.cornerRadius = 10
+            self.firstLayerContainerView.layer.cornerRadius = 10
+        }
     }
 }
+
 
 extension CreditViewController: Identifiable {}

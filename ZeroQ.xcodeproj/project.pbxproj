@@ -18,6 +18,7 @@
 		AB36B1AF2210070C000F6C7D /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB36B1AE2210070C000F6C7D /* Configuration.storyboard */; };
 		AB36B1B12210076F000F6C7D /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36B1B02210076F000F6C7D /* ConfigurationViewController.swift */; };
 		AB36B1B322101E55000F6C7D /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36B1B222101E55000F6C7D /* UILabelExtension.swift */; };
+		AB36B1B522104DD1000F6C7D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36B1B422104DD1000F6C7D /* Alert.swift */; };
 		AB75CEB9220F622E0054EFEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEB8220F622E0054EFEA /* AppDelegate.swift */; };
 		AB75CEBB220F622E0054EFEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75CEBA220F622E0054EFEA /* ViewController.swift */; };
 		AB75CEBE220F622E0054EFEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75CEBC220F622E0054EFEA /* Main.storyboard */; };
@@ -118,6 +119,7 @@
 		AB36B1AE2210070C000F6C7D /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
 		AB36B1B02210076F000F6C7D /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		AB36B1B222101E55000F6C7D /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		AB36B1B422104DD1000F6C7D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		AB75CEB5220F622E0054EFEA /* ZeroQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB75CEB8220F622E0054EFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB75CEBA220F622E0054EFEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 			children = (
 				AB75CF1B220F79960054EFEA /* Constants.swift */,
 				ABB9EE44220FCEB000338C0F /* Configuration.swift */,
+				AB36B1B422104DD1000F6C7D /* Alert.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -752,6 +755,7 @@
 				AB75CEFE220F6A8B0054EFEA /* ProductService.swift in Sources */,
 				AB75CEE6220F63BA0054EFEA /* Product.swift in Sources */,
 				AB75CEED220F67240054EFEA /* StringExtension.swift in Sources */,
+				AB36B1B522104DD1000F6C7D /* Alert.swift in Sources */,
 				AB2A443B220F99D700FF6AC8 /* EventCell.swift in Sources */,
 				AB75CF0B220F6C290054EFEA /* TargetType+Encode.swift in Sources */,
 				AB75CF1C220F79960054EFEA /* Constants.swift in Sources */,
@@ -960,7 +964,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MX68PC94Q;
 				INFOPLIST_FILE = "$(SRCROOT)/ZeroQ/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -983,7 +987,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MX68PC94Q;
 				INFOPLIST_FILE = "$(SRCROOT)/ZeroQ/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

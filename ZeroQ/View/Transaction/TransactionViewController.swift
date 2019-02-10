@@ -12,7 +12,6 @@ import UIKit
 
 class TransactionViewController: UIViewController {
     @IBOutlet weak var eventImageView: UIImageView!
-    
     @IBOutlet weak var spendLimitButton: UILabel!
     @IBOutlet weak var createGroupButton: UIButton!
     @IBOutlet weak var buyContainer: UIView!
@@ -21,6 +20,8 @@ class TransactionViewController: UIViewController {
     @IBOutlet weak var buttonRight: UIButton!
     @IBOutlet weak var buyImageView: UIImageView!
     @IBOutlet weak var payImageView: UIImageView!
+    
+    var hasCredit = false
     var lastButtonState: UIControl.State?
     static func instance()-> TransactionViewController {
         return UIStoryboard.storyboard(.transaction).instantiateViewController() as TransactionViewController
@@ -33,13 +34,21 @@ class TransactionViewController: UIViewController {
     }
   
     @objc func openPurchase() {
-        let instance = PurchaseViewController.instance()
-       self.navigationController?.pushViewController(instance, animated: true)
+        if hasCredit {
+            let instance = PurchaseViewController.instance()
+            self.navigationController?.pushViewController(instance, animated: true)
+        }else {
+            validationAlert()
+        }
     }
     
     @objc func openPay() {
-        let instance = PaymentViewController.instance()
-        self.navigationController?.pushViewController(instance, animated: true)
+        if hasCredit {
+            let instance = PaymentViewController.instance()
+            self.navigationController?.pushViewController(instance, animated: true)
+        }else {
+            validationAlert()
+        }
     }
     
     @objc func defineASpendingLimit(sender:UITapGestureRecognizer) {
@@ -52,13 +61,15 @@ class TransactionViewController: UIViewController {
         let instance = GroupViewController.instance()
         self.navigationController?.pushViewController(instance, animated: true)
     }
+    
+    private func validationAlert(){
+        Alert.defaultAlert(for: self, title: "Alert", message: "Defina um limite de gastos.")
+    }
 }
 
 extension TransactionViewController {
     private func setupView() {
         spendLimitButton.underline()
-        payContainer.isUserInteractionEnabled = false
-        buyContainer.isUserInteractionEnabled = false
         createGroupButton.layer.cornerRadius = 20
         buyImageView.image = UIImage(named: "soda")
         payImageView.image = UIImage(named: "pay")
@@ -83,6 +94,7 @@ extension TransactionViewController: Identifiable {}
 
 extension TransactionViewController: AddLimiteDelegate {
     func addLimite(_ amount: String?) {
+        hasCredit = true
         DispatchQueue.main.async {
             self.spendLimitButton.text = "Total Gasto: R$ 0"
             self.spendLimitButton.isUserInteractionEnabled = false

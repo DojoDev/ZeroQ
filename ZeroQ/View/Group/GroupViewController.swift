@@ -27,6 +27,8 @@ class GroupViewController: UIViewController {
     }
 
     @IBAction func createGroup(_ sender: Any) {
+        let instance = PurchaseViewController.instance()
+        self.navigationController?.pushViewController(instance, animated: true)
     }
     
 }

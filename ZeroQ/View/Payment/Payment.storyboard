@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="vIS-rr-eE7">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Apresente este QR Code ao Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcN-iQ-3au">
                                 <rect key="frame" x="54" y="124" width="267" height="21"/>
@@ -51,7 +51,7 @@
                             <constraint firstItem="vIS-rr-eE7" firstAttribute="leading" secondItem="FXS-aO-UlG" secondAttribute="leading" id="95y-1b-bmT"/>
                             <constraint firstItem="Uqq-In-VEQ" firstAttribute="top" secondItem="6zT-Q0-T3m" secondAttribute="bottom" constant="35" id="Gtt-SD-IRa"/>
                             <constraint firstItem="tcN-iQ-3au" firstAttribute="top" secondItem="FXS-aO-UlG" secondAttribute="top" constant="60" id="QrY-hU-ly2"/>
-                            <constraint firstItem="vIS-rr-eE7" firstAttribute="top" secondItem="FXS-aO-UlG" secondAttribute="top" id="RxE-kA-HR8"/>
+                            <constraint firstItem="vIS-rr-eE7" firstAttribute="top" secondItem="hJO-7j-vvH" secondAttribute="top" id="RxE-kA-HR8"/>
                             <constraint firstItem="FXS-aO-UlG" firstAttribute="trailing" secondItem="Uqq-In-VEQ" secondAttribute="trailing" id="SrC-Pm-kjm"/>
                             <constraint firstItem="FXS-aO-UlG" firstAttribute="trailing" secondItem="6zT-Q0-T3m" secondAttribute="trailing" constant="38" id="Tyu-9b-Y5s"/>
                             <constraint firstItem="tcN-iQ-3au" firstAttribute="leading" secondItem="FXS-aO-UlG" secondAttribute="leading" constant="54" id="Z2M-GC-tNV"/>

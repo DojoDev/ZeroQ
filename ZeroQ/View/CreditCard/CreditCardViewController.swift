@@ -27,7 +27,7 @@ class CreditCardViewController: UIViewController {
         setupView()
     }
     
-    @IBAction func readCard(_ sender: Any) {
+    @objc func readCard() {
         recognizer.startCamera()
     }
 }
@@ -35,9 +35,12 @@ class CreditCardViewController: UIViewController {
 extension CreditCardViewController: PayCardsRecognizerPlatformDelegate {
     private func setupView() {
         self.title = "CARTÃO DE CRÉDITO"
-        self.readCardButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
-        self.readCardButton.setTitle(String.fontAwesomeIcon(name: .camera), for: .normal)
-        self.readCardButton.setTitleColor(UIColor.white, for: .normal)
+        cvvTextField.delegate = self
+        nameTextField.delegate = self
+        readCardButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
+        readCardButton.setTitle(String.fontAwesomeIcon(name: .camera), for: .normal)
+        readCardButton.setTitleColor(UIColor.white, for: .normal)
+        readCardButton.addTarget(self, action: #selector(readCard), for: .touchUpInside)
         DispatchQueue.main.async {
             self.cvvTextField.addBottomBorderWithColor(color: UIColor.black, height: 1)
             self.expirationTextField.addBottomBorderWithColor(color: UIColor.black, height: 1)
@@ -55,7 +58,26 @@ extension CreditCardViewController: PayCardsRecognizerPlatformDelegate {
         if let month = result.recognizedExpireDateMonth, let year = result.recognizedExpireDateYear {
             expirationTextField.text = "\(month)/\(year)"
         }
+        
         recognizer.stopCamera()
+    }
+    
+    @objc private func popViewController(){
+        self.navigationController?.popViewController(animated: true)
+    }
+}
+
+extension CreditCardViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let name = nameTextField.text, !name.isEmpty, let cvv = cvvTextField.text, !cvv.isEmpty {
+            readCardButton.setTitle("OK", for: .normal)
+            readCardButton.removeTarget(self, action: nil, for: .touchUpInside)
+            readCardButton.addTarget(self, action: #selector(popViewController), for: .touchUpInside)
+            
+        }else {
+            readCardButton.addTarget(self, action: #selector(readCard), for: .touchUpInside)
+            readCardButton.setTitle(String.fontAwesomeIcon(name: .camera), for: .normal)
+        }
     }
 }
 
