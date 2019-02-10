@@ -1,6 +1,7 @@
 package com.movile.zeroQ;
 
 import java.time.LocalDate;
+import java.util.Collections;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,6 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -31,10 +33,24 @@ public class SwaggerConfig extends WebMvcConfigurationSupport{
           .pathMapping("/")
           .directModelSubstitute(LocalDate.class, String.class)
           .genericModelSubstitutes(ResponseEntity.class)
-          .useDefaultResponseMessages(true);
+          .useDefaultResponseMessages(true)
+          .apiInfo(getApiInfo());
 
     }
 
+	private ApiInfo getApiInfo() {
+	    return new ApiInfo(
+	    		  "ZERO-Q",
+	    	      "Cacheless XP",
+	    	      "0.1",
+	    	      "",
+	    	      ApiInfo.DEFAULT_CONTACT,
+	    	      "Apache 2.0", 
+	    	      "http://www.apache.org/licenses/LICENSE-2.0",
+	            Collections.emptyList()
+	    );
+	}
+	
 	
 	@Override
 	protected void addResourceHandlers(ResourceHandlerRegistry registry) {
