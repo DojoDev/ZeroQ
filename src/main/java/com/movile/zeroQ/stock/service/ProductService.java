@@ -14,6 +14,11 @@ public class ProductService {
 	@Autowired
 	private ProductRepository productRepository;
 	
+	
+	public void save(Product product) {
+		productRepository.save(product);
+	}
+	
 	public List<Product> listAll() {
 		return productRepository.findAll();
 	}
@@ -24,6 +29,19 @@ public class ProductService {
 
 	public List<Product> findByName(String name) {
 		return productRepository.findByName(name);
+	}
+
+	public void remove(Integer id) {
+		productRepository.findById(id).ifPresent(p -> {
+			productRepository.delete(p);
+		});
+	}
+	
+	public void update(Integer id,Product product) {
+		productRepository.findById(id).ifPresent(p -> {
+			product.setId(id);
+			save(product);
+		});
 	}
 
 }
