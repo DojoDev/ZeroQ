@@ -20,34 +20,35 @@ public class TransactionTask {
 	private RestTemplate restTemplate;
 
 	@Value("${urlZoop}") private String urlZoop;
+	@Value("${urlZoopCapture}") private String urlZoopCapture;
 	@Value("${currency}") private String currency;
 	@Value("${customer}") private String customer;
 	@Value("${behalf_of}") private String behalfOf;
 
-	public TransactionResponse sendTransaction(TransactionRequest TransactionRequest) {
+	public TransactionResponse sendTransaction(TransactionRequest TransactionRequest,String url,String param) {
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("Authorization", "Basic enBrX3Rlc3RfRXpDa3pGRktpYkdRVTZIRnE3RVlWdXhJOg==");
 		headers.set("Content-Type", "application/json");
 
 		HttpEntity<TransactionRequest> request = new HttpEntity<TransactionRequest>(TransactionRequest, headers);
 
-		ResponseEntity<TransactionResponse> quote = restTemplate.postForEntity(urlZoop, request,
-				TransactionResponse.class, "transactions");
+		ResponseEntity<TransactionResponse> quote = restTemplate.postForEntity(url, request,
+				TransactionResponse.class, param);
 
 		return quote.getBody();
 	}
 
-	public TransactionResponse finalizeTransaction(BigDecimal reserve) {
+	public TransactionResponse finalizeTransaction(String idTransaction,BigDecimal reserve) {
 		TransactionRequest transactionRequest = buildTransaction();
 		transactionRequest.setCapture("true");
 		transactionRequest.setAmount(reserve.floatValue());
-		return sendTransaction(transactionRequest);
+		return sendTransaction(transactionRequest,urlZoopCapture,idTransaction);
 	}
 
 	public TransactionResponse initializeTransaction(BigDecimal reserve) {
 		TransactionRequest transactionRequest = buildTransaction();
 		transactionRequest.setAmount(reserve.floatValue());
-		return sendTransaction(transactionRequest);
+		return sendTransaction(transactionRequest,urlZoop,"transactions");
 	}
 	
 	private TransactionRequest buildTransaction() {

@@ -37,7 +37,7 @@ public class Transaction {
 	private List<Wallet> wallets;
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "transaction", cascade = CascadeType.ALL)
 	private List<ItemTransaction> itens;
-
+	private Status status;
 	
 	public BigDecimal valueConsumed() {
 		if(Objects.isNull(itens))return BigDecimal.ZERO;
