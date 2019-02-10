@@ -79,6 +79,10 @@
 		ABB9EE4A220FD5B300338C0F /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE49220FD5B300338C0F /* GroupViewController.swift */; };
 		ABB9EE4D220FDF2200338C0F /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB9EE4C220FDF2200338C0F /* Payment.storyboard */; };
 		ABB9EE4F220FDF3C00338C0F /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE4E220FDF3C00338C0F /* PaymentViewController.swift */; };
+		ABB9EE52220FE42700338C0F /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB9EE51220FE42700338C0F /* Purchase.storyboard */; };
+		ABB9EE54220FE43400338C0F /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE53220FE43400338C0F /* PurchaseViewController.swift */; };
+		ABB9EE57220FE51700338C0F /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE55220FE51700338C0F /* PurchaseCell.swift */; };
+		ABB9EE58220FE51700338C0F /* PurchaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB9EE56220FE51700338C0F /* PurchaseCell.xib */; };
 		D46DA019D5A98C78BB82C45B /* Pods_ZeroQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */; };
 		E3F7A3C1C8C71C1A4BA88C05 /* Pods_ZeroQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */; };
 /* End PBXBuildFile section */
@@ -175,6 +179,10 @@
 		ABB9EE49220FD5B300338C0F /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		ABB9EE4C220FDF2200338C0F /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
 		ABB9EE4E220FDF3C00338C0F /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		ABB9EE51220FE42700338C0F /* Purchase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Purchase.storyboard; sourceTree = "<group>"; };
+		ABB9EE53220FE43400338C0F /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		ABB9EE55220FE51700338C0F /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
+		ABB9EE56220FE51700338C0F /* PurchaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseCell.xib; sourceTree = "<group>"; };
 		F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQ.debug.xcconfig"; path = "Target Support Files/Pods-ZeroQ/Pods-ZeroQ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -280,6 +288,7 @@
 		AB75CED9220F62B50054EFEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ABB9EE50220FE3ED00338C0F /* Purchase */,
 				ABB9EE4B220FDEC000338C0F /* Payment */,
 				ABB9EE46220FCF5F00338C0F /* Group */,
 				AB2A4440220FAA5400FF6AC8 /* Transaction */,
@@ -483,6 +492,17 @@
 			path = Payment;
 			sourceTree = "<group>";
 		};
+		ABB9EE50220FE3ED00338C0F /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9EE51220FE42700338C0F /* Purchase.storyboard */,
+				ABB9EE53220FE43400338C0F /* PurchaseViewController.swift */,
+				ABB9EE55220FE51700338C0F /* PurchaseCell.swift */,
+				ABB9EE56220FE51700338C0F /* PurchaseCell.xib */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
 		F01E0509ECFA8B6E5DA65EBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,7 +615,9 @@
 				AB2A443F220F9E6100FF6AC8 /* EventCell.xib in Resources */,
 				AB75CF25220F7D8C0054EFEA /* CreditCard.storyboard in Resources */,
 				AB2A4437220F931900FF6AC8 /* SingUp.storyboard in Resources */,
+				ABB9EE52220FE42700338C0F /* Purchase.storyboard in Resources */,
 				AB75CF42220F858D0054EFEA /* Montserrat-ThinItalic.ttf in Resources */,
+				ABB9EE58220FE51700338C0F /* PurchaseCell.xib in Resources */,
 				AB75CF51220F858D0054EFEA /* Montserrat-LightItalic.ttf in Resources */,
 				AB75CF2A220F81980054EFEA /* Login.storyboard in Resources */,
 				AB75CF41220F858D0054EFEA /* Montserrat-SemiBold.ttf in Resources */,
@@ -719,6 +741,7 @@
 				AB75CEF4220F693C0054EFEA /* ProductAPIDescriptor.swift in Sources */,
 				AB75CF27220F7DBC0054EFEA /* CreditViewController.swift in Sources */,
 				AB75CEFA220F69E10054EFEA /* TransactionAPIDescriptor.swift in Sources */,
+				ABB9EE54220FE43400338C0F /* PurchaseViewController.swift in Sources */,
 				AB75CF17220F75130054EFEA /* WalletService.swift in Sources */,
 				AB75CEF8220F69CB0054EFEA /* GroupAPIDescriptor.swift in Sources */,
 				ABB9EE4F220FDF3C00338C0F /* PaymentViewController.swift in Sources */,
@@ -730,6 +753,7 @@
 				ABB9EE4A220FD5B300338C0F /* GroupViewController.swift in Sources */,
 				AB2A4435220F930200FF6AC8 /* SingUpViewController.swift in Sources */,
 				AB75CF00220F6AD00054EFEA /* UIStoryboard.swift in Sources */,
+				ABB9EE57220FE51700338C0F /* PurchaseCell.swift in Sources */,
 				AB75CF02220F6B3A0054EFEA /* Identifiable.swift in Sources */,
 				AB75CEDF220F63540054EFEA /* Group.swift in Sources */,
 				AB75CF11220F74660054EFEA /* ShopkeeperService.swift in Sources */,
