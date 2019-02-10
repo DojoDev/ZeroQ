@@ -77,6 +77,8 @@
 		ABB9EE45220FCEB000338C0F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE44220FCEB000338C0F /* Configuration.swift */; };
 		ABB9EE48220FD11000338C0F /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB9EE47220FD11000338C0F /* Group.storyboard */; };
 		ABB9EE4A220FD5B300338C0F /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE49220FD5B300338C0F /* GroupViewController.swift */; };
+		ABB9EE4D220FDF2200338C0F /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB9EE4C220FDF2200338C0F /* Payment.storyboard */; };
+		ABB9EE4F220FDF3C00338C0F /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB9EE4E220FDF3C00338C0F /* PaymentViewController.swift */; };
 		D46DA019D5A98C78BB82C45B /* Pods_ZeroQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB9DA2466C84AB85ED12DD /* Pods_ZeroQ.framework */; };
 		E3F7A3C1C8C71C1A4BA88C05 /* Pods_ZeroQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A484F357F5F360F0BB1F58 /* Pods_ZeroQTests.framework */; };
 /* End PBXBuildFile section */
@@ -171,6 +173,8 @@
 		ABB9EE44220FCEB000338C0F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		ABB9EE47220FD11000338C0F /* Group.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Group.storyboard; sourceTree = "<group>"; };
 		ABB9EE49220FD5B300338C0F /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		ABB9EE4C220FDF2200338C0F /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		ABB9EE4E220FDF3C00338C0F /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		F2DF450F508D3EF7D5CC8C20 /* Pods-ZeroQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroQ.debug.xcconfig"; path = "Target Support Files/Pods-ZeroQ/Pods-ZeroQ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +280,7 @@
 		AB75CED9220F62B50054EFEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ABB9EE4B220FDEC000338C0F /* Payment */,
 				ABB9EE46220FCF5F00338C0F /* Group */,
 				AB2A4440220FAA5400FF6AC8 /* Transaction */,
 				AB75CF28220F800D0054EFEA /* Auth */,
@@ -469,6 +474,15 @@
 			path = Group;
 			sourceTree = "<group>";
 		};
+		ABB9EE4B220FDEC000338C0F /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9EE4C220FDF2200338C0F /* Payment.storyboard */,
+				ABB9EE4E220FDF3C00338C0F /* PaymentViewController.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		F01E0509ECFA8B6E5DA65EBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,6 +599,7 @@
 				AB75CF51220F858D0054EFEA /* Montserrat-LightItalic.ttf in Resources */,
 				AB75CF2A220F81980054EFEA /* Login.storyboard in Resources */,
 				AB75CF41220F858D0054EFEA /* Montserrat-SemiBold.ttf in Resources */,
+				ABB9EE4D220FDF2200338C0F /* Payment.storyboard in Resources */,
 				AB75CF20220F7D5D0054EFEA /* Event.storyboard in Resources */,
 				AB75CF52220F858D0054EFEA /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				AB75CF4B220F858D0054EFEA /* Montserrat-ExtraBoldItalic.ttf in Resources */,
@@ -706,6 +721,7 @@
 				AB75CEFA220F69E10054EFEA /* TransactionAPIDescriptor.swift in Sources */,
 				AB75CF17220F75130054EFEA /* WalletService.swift in Sources */,
 				AB75CEF8220F69CB0054EFEA /* GroupAPIDescriptor.swift in Sources */,
+				ABB9EE4F220FDF3C00338C0F /* PaymentViewController.swift in Sources */,
 				AB75CF0C220F6C290054EFEA /* BaseService.swift in Sources */,
 				AB75CEDD220F63450054EFEA /* Transaction.swift in Sources */,
 				AB75CF15220F75080054EFEA /* TransactionService.swift in Sources */,
