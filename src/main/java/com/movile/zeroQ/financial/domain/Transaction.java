@@ -7,7 +7,11 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,7 +20,6 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter
-@Table(name="transaction",schema="financial")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Transaction {
@@ -28,4 +31,9 @@ public class Transaction {
 	private BigDecimal value;
 	@Enumerated(EnumType.STRING)
 	private Status status;
+	
+	@ManyToOne
+	@JoinColumn(name = "id_wallet")
+	@LazyCollection(LazyCollectionOption.TRUE)
+	private Wallet wallet;
 }

@@ -6,6 +6,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
+import com.movile.zeroQ.event.domain.Event;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,4 +30,9 @@ public class Product {
 	private Integer id;
 	private String name;
 	private BigDecimal price;
+	
+	@ManyToOne
+	@JoinColumn(name = "id_event")
+	@LazyCollection(LazyCollectionOption.TRUE)
+	private Event event;
 }

@@ -43,8 +43,8 @@ public class Event {
 	@OneToOne(cascade = CascadeType.ALL)
 	private Merchant merchant;
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.MERGE)
+	@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.MERGE, mappedBy="event")
 	private List<Wallet> wallets;
-	@OneToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
+	@OneToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL, mappedBy="event")
 	private List<Product> products;
 }
