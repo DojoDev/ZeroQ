@@ -70,7 +70,7 @@ class TransactionViewController: UIViewController {
 extension TransactionViewController {
     private func setupView() {
         spendLimitButton.underline()
-        createGroupButton.layer.cornerRadius = 20
+        createGroupButton.layer.cornerRadius = 25
         buyImageView.image = UIImage(named: "soda")
         payImageView.image = UIImage(named: "pay")
         eventImageView.layer.cornerRadius = 10
