@@ -1,4 +1,4 @@
-package com.movile.zeroQ.event.resource;
+package com.movile.zeroQ.financial.resource;
 
 import java.net.URI;
 import java.util.List;
@@ -18,52 +18,52 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.movile.zeroQ.event.domain.Event;
-import com.movile.zeroQ.event.service.EventService;
+import com.movile.zeroQ.financial.domain.Wallet;
+import com.movile.zeroQ.financial.service.WalletService;
 
 @RestController
-@RequestMapping("/events")
-public class EventResource {
+@RequestMapping("/wallet")
+public class WalletResource {
 
 	@Autowired
-	private EventService eventService;
+	private WalletService walletService;
 	
 	@GetMapping
-	public List<Event> list() {
-		return eventService.listAll();
+	public List<Wallet> list() {
+		return walletService.listAll();
 	}
 
 	@GetMapping("/{id}")
-	public Event getEvent(@PathVariable("id") Integer id) {
-		return eventService.findById(id).orElseGet(Event::new);
+	public Wallet getWallet(@PathVariable("id") Integer id) {
+		return walletService.findById(id).orElseGet(Wallet::new);
 	}
 	
 	@GetMapping("/name={name}")
-	public List<Event> getEvent(@PathVariable("name") String name) {
-		return eventService.findByName(name);
+	public List<Wallet> getWallet(@PathVariable("name") String name) {
+		return walletService.findByName(name);
 	}
 	
 	@DeleteMapping("/{id}")
 	public void remove(@PathVariable("id") Integer id){
-		eventService.remove(id);
+		walletService.remove(id);
 	}
 	
 	@PutMapping("/{id}")
-	public void remove(@PathVariable("id") Integer id, @Valid @RequestBody Event event){
-		eventService.update(id,event);
+	public void remove(@PathVariable("id") Integer id, @Valid @RequestBody Wallet wallet){
+		walletService.update(id,wallet);
 	}
 	
 	@PostMapping
-	public ResponseEntity<String> save(@Valid @RequestBody Event event, BindingResult result){
+	public ResponseEntity<String> save(@Valid @RequestBody Wallet wallet, BindingResult result){
 
 		if(result.hasErrors()) {
 			return ResponseEntity.badRequest().build();
 		}
-		event.setId(0);
-		eventService.save(event);
+		wallet.setId(0);
+		walletService.save(wallet);
 
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-				.buildAndExpand(event.getId()).toUri();
+				.buildAndExpand(wallet.getId()).toUri();
 
 		return ResponseEntity.created(uri).build();
 	}

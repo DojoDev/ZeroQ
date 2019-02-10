@@ -21,13 +21,13 @@ import lombok.Setter;
 @Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Group {
+public class MyGroup {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id_group")
 	private Integer id;
-	@OneToMany(fetch = FetchType.LAZY)
+	@OneToMany(fetch = FetchType.LAZY,mappedBy ="myGroup")
 	private List<Wallet> wallets;
 	
 }
