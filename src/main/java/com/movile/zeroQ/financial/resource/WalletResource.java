@@ -66,7 +66,7 @@ public class WalletResource {
 
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 				.buildAndExpand(wallet.getId()).toUri();
-
+		
 		return ResponseEntity.created(uri).build();
 	}
 	
