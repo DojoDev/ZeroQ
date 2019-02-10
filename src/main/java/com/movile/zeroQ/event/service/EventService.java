@@ -1,6 +1,7 @@
 package com.movile.zeroQ.event.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,8 +19,20 @@ public class EventService {
 		return eventRepository.findAll();
 	}
 
-	public Event findById(Integer id) {
-		return eventRepository.findById(id).orElseGet(Event::new);
+	public Optional<Event> findById(Integer id) {
+		return eventRepository.findById(id);
+	}
+
+	public void save(Event event) {
+		eventRepository.save(event);
+		
+	}
+
+	public void remove(Integer id) {
+		Optional<Event> event = eventRepository.findById(id);
+		event.ifPresent(ev ->{
+			eventRepository.delete(ev);
+		});
 	}
 
 }
