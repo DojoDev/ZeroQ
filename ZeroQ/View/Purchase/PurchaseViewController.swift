@@ -11,6 +11,9 @@ import UIKit
 class PurchaseViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    static func instance()-> PurchaseViewController {
+        return UIStoryboard.storyboard(.purchase).instantiateViewController() as PurchaseViewController
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +35,6 @@ extension PurchaseViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PurchaseCell")! as! PurchaseCell
             return cell
     }
-    
-    
 }
+
+extension PurchaseViewController: Identifiable {}

@@ -9,7 +9,7 @@
 import UIKit
 
 class PurchaseCell: UITableViewCell {
-
+    
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var productCategoryLabel: UILabel!
@@ -22,17 +22,12 @@ class PurchaseCell: UITableViewCell {
     @IBOutlet weak var buttonCountProducts: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-       productImageContainerView.addCornerRadius(10)
-       mainContainerView.addCornerRadius(10)
-        removeItemButton.roundedButton(arrow: .minus)
-        buttonAdd.roundedButton(arrow: .plus)
-         productImageView.addCornerRadius(10)
+        productImageContainerView.addCornerRadius(10)
+        mainContainerView.addCornerRadius(10)
+        buttonCountProducts.roundedButton()
+        buttonCountProducts.setTitle("1", for: .normal)
+        removeItemButton.roundedButton(icon: .minus)
+        buttonAdd.roundedButton(icon: .plus)
+        productImageView.addCornerRadius(10)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

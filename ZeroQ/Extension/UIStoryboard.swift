@@ -18,6 +18,10 @@ extension UIStoryboard {
         
         static var creditLimit: Storyboard { return Storyboard(name: "Credit")}
         static var group: Storyboard { return Storyboard(name: "Group")}
+        static var purchase: Storyboard { return Storyboard(name: "Purchase")}
+        static var payment: Storyboard { return Storyboard(name: "Payment")}
+        
+        
 
         
         

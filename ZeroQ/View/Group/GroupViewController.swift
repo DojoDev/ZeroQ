@@ -24,7 +24,7 @@ class GroupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createGroupButton.addCornerRadius(25)
-        leftButton.roundedButton(arrow: .arrowLeft)
+        leftButton.roundedButton(icon: .arrowLeft)
         groupNameTextField.layer.cornerRadius = 10
         marcosImageView.rounded()
         lauraImageView.rounded()

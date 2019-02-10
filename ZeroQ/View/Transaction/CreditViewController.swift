@@ -38,8 +38,8 @@ class CreditViewController: UIViewController {
     private func setupView() {
         containerView.addCornerRadius(10)
         spedingLimitTextField.addBottomBorderWithColor(color: UIColor.black, height: 2)
-        submitButton.roundedButton(arrow: .arrowRight)
-        buttonLeft.roundedButton(arrow: .arrowLeft)
+        submitButton.roundedButton(icon: .arrowRight)
+        buttonLeft.roundedButton(icon: .arrowLeft)
         eventImageView.layer.cornerRadius = 10
         firstLayerContainerView.layer.cornerRadius = 10
     }
