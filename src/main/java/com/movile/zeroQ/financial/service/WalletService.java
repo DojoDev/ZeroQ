@@ -34,8 +34,8 @@ public class WalletService {
 	}
 
 	public void remove(Integer id) {
-		Optional<Wallet> wallet = walletRepository.findById(id);
-		wallet.ifPresent(ev ->{
+		walletRepository.findById(id)
+		.ifPresent(ev ->{
 			walletRepository.delete(ev);
 		});
 	}

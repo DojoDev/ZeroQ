@@ -45,6 +45,6 @@ public class Event {
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.MERGE, mappedBy="event")
 	private List<Wallet> wallets;
-	@OneToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL, mappedBy="event")
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="event")
 	private List<Product> products;
 }

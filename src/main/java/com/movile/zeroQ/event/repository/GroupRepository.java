@@ -6,5 +6,4 @@ import com.movile.zeroQ.event.domain.MyGroup;
 
 @Repository
 public interface GroupRepository extends JpaRepository<MyGroup, Integer> {
-	
 }

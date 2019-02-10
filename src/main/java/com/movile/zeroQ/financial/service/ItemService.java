@@ -17,9 +17,7 @@ public class ItemService {
 	
 	public void insertItems(List<ItemTransaction> items) {
 		
-		for (ItemTransaction itemTransaction : items) {
-			itemTransaction.setStatus(Status.SOLICITADA);
-		}
+		items.forEach(it -> it.setStatus(Status.SOLICITADA));
 		itemTransactionRepository.saveAll(items);
 	}
 

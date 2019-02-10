@@ -26,8 +26,8 @@ public class TransactionService {
 	
 	public List<Transaction> listAll() {
 		return transactionRepository.findAll().stream().peek(t ->{
-			t.setItens(itemTransactionRepository.findByTransaction(t));
-		}).collect(Collectors.toList());
+					t.setItens(itemTransactionRepository.findByTransaction(t));
+				}).collect(Collectors.toList());
 	}
 
 	public Optional<Transaction> findById(Integer id) {
@@ -46,10 +46,7 @@ public class TransactionService {
 	}
 
 	public void remove(Integer id) {
-		Optional<Transaction> transaction = transactionRepository.findById(id);
-		transaction.ifPresent(ev ->{
-			transactionRepository.delete(ev);
-		});
+		transactionRepository.findById(id).ifPresent(ev -> transactionRepository.delete(ev));
 	}
 	
 	public void initializeTransaction(Wallet wallet, BigDecimal preApproved) {

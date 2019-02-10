@@ -7,9 +7,9 @@ public class TransactionParse {
 
 	public static Transaction of(TransactionResponse transactionResponse) {
 		return Transaction.builder()
-		.externalId(transactionResponse.getId())
-		.originalAmount(transactionResponse.getOriginal_amount())
-		.build();
+			.externalId(transactionResponse.getId())
+			.originalAmount(transactionResponse.getOriginal_amount())
+			.build();
 	}
 
 }

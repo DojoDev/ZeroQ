@@ -51,7 +51,7 @@ public class ItemTransactionResource {
 		
 		item.setId(0);
 		Optional<Transaction> transaction = transactionService.findById(idTransaction);
-		if(transaction.isPresent()) return ResponseEntity.badRequest().build();
+		if(!transaction.isPresent()) return ResponseEntity.badRequest().build();
 		
 		item.setTransaction(transaction.get());
 		itemService.insertItems(Lists.newArrayList(item));

@@ -9,7 +9,5 @@ import com.movile.zeroQ.event.domain.Event;
 
 @Repository
 public interface EventRepository extends JpaRepository<Event, Integer> {
-
-	List<Event> findByName(String name);
-	
+	public List<Event> findByName(String name);
 }

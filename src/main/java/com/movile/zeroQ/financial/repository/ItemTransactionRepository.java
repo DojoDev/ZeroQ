@@ -9,7 +9,6 @@ import com.movile.zeroQ.financial.domain.Transaction;
 
 public interface ItemTransactionRepository extends JpaRepository<ItemTransaction, Integer>{
 
-	List<ItemTransaction> findByTransaction(Transaction transaction);
-	
-	List<ItemTransaction> findByDescription(String description);
+	public List<ItemTransaction> findByTransaction(Transaction transaction);
+	public List<ItemTransaction> findByDescription(String description);
 }
