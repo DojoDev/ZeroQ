@@ -23,12 +23,7 @@ class GroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createGroupButton.addCornerRadius(25)
-        leftButton.roundedButton(icon: .arrowLeft)
-        groupNameTextField.layer.cornerRadius = 10
-        marcosImageView.rounded()
-        lauraImageView.rounded()
-        buttonAdd.rounded()
+        setupView()
     }
 
     @IBAction func createGroup(_ sender: Any) {
@@ -36,4 +31,14 @@ class GroupViewController: UIViewController {
     
 }
 
+extension GroupViewController {
+    private func setupView() {
+        createGroupButton.addCornerRadius(25)
+        leftButton.roundedButton(icon: .arrowLeft)
+        groupNameTextField.layer.cornerRadius = 10
+        marcosImageView.rounded()
+        lauraImageView.rounded()
+        buttonAdd.rounded()
+    }
+}
 extension GroupViewController: Identifiable {}

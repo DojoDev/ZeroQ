@@ -30,9 +30,31 @@ class TransactionViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         configGesture()
-        
+    }
+  
+    @objc func openPurchase() {
+        let instance = PurchaseViewController.instance()
+       self.navigationController?.pushViewController(instance, animated: true)
     }
     
+    @objc func openPay() {
+        let instance = PaymentViewController.instance()
+        self.navigationController?.pushViewController(instance, animated: true)
+    }
+    
+    @objc func defineASpendingLimit(sender:UITapGestureRecognizer) {
+        let instance = CreditViewController.instance()
+        instance.addLimitDelegate = self
+        self.navigationController?.pushViewController(instance, animated: true)
+    }
+    
+    @IBAction func createGroupe(_ sender: Any) {
+        let instance = GroupViewController.instance()
+        self.navigationController?.pushViewController(instance, animated: true)
+    }
+}
+
+extension TransactionViewController {
     private func setupView() {
         spendLimitButton.underline()
         payContainer.isUserInteractionEnabled = false
@@ -54,29 +76,6 @@ class TransactionViewController: UIViewController {
         
         let tapPay = UITapGestureRecognizer(target: self, action: #selector(TransactionViewController.openPay))
         payContainer.addGestureRecognizer(tapPay)
-    }
-    
-    @objc func openPurchase() {
-        let instance = PurchaseViewController.instance()
-       self.navigationController?.pushViewController(instance, animated: true)
-    }
-    
-    @objc func openPay() {
-        let instance = PaymentViewController.instance()
-    self.navigationController?.pushViewController(instance, animated: true)
-    }
-    
-    @objc func defineASpendingLimit(sender:UITapGestureRecognizer) {
-        
-        let instance = CreditViewController.instance()
-        instance.addLimitDelegate = self
-        self.navigationController?.pushViewController(instance, animated: true)
-        
-    }
-    
-    @IBAction func createGroupe(_ sender: Any) {
-        let instance = GroupViewController.instance()
-        self.navigationController?.pushViewController(instance, animated: true)
     }
 }
 

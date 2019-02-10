@@ -15,9 +15,7 @@ class ConfigurationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        subViewContainer.addCornerRadius(10)
-        viewContainer.addCornerRadius(10)
-        self.title = "Configuração"
+        setupView()
     }
 
     @IBAction func openToEvents(_ sender: Any) {
@@ -28,5 +26,13 @@ class ConfigurationViewController: UIViewController {
     @IBAction func openToConfiguration(_ sender: Any) {
         let instance = CreditCardViewController.instance()
           self.navigationController?.pushViewController(instance, animated: true)
+    }
+}
+
+extension ConfigurationViewController {
+    private func setupView() {
+        self.title = "CONFIGURAÇÃO"
+        subViewContainer.addCornerRadius(10)
+        viewContainer.addCornerRadius(10)
     }
 }

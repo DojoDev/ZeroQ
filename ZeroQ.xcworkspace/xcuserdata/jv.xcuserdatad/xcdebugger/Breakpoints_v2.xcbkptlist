@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZeroQ/View/Payment/PaymentViewController.swift"
-            timestampString = "571484681.610763"
+            timestampString = "571488553.954497"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZeroQ/View/CreditCard/CreditCardViewController.swift"
-            timestampString = "571484681.6108479"
+            timestampString = "571488553.954615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64">
+            startingLineNumber = "63"
+            endingLineNumber = "63">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZeroQ/View/Transaction/TransactionViewController.swift"
-            timestampString = "571484681.610955"
+            timestampString = "571488553.954778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "addLimite(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZeroQ/View/Transaction/TransactionViewController.swift"
-            timestampString = "571484681.6114891"
+            timestampString = "571488553.955464"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "defineASpendingLimit(sender:)"
             landmarkType = "7">
          </BreakpointContent>

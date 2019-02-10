@@ -19,7 +19,9 @@ class EventViewController: UIViewController {
         super.viewDidLoad()
         setupView()      
     }
-    
+}
+
+extension EventViewController {
     private func setupView() {
         self.title = "Eventos"
         tableView.dataSource = self
@@ -30,7 +32,6 @@ class EventViewController: UIViewController {
         tableView.backgroundColor = UIColor.clear
     }
 }
-
 extension EventViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

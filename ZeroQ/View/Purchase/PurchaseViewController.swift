@@ -16,14 +16,30 @@ class PurchaseViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension PurchaseViewController {
+    private func setupView() {
+        self.title = "COMPRAR"
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UINib.init(nibName: "PurchaseCell", bundle: nil), forCellReuseIdentifier: "PurchaseCell")
         tableView.estimatedRowHeight = 250
         tableView.rowHeight = UITableView.automaticDimension
         tableView.backgroundColor = UIColor.clear
     }
+}
+
+extension PurchaseViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        let instance = PaymentViewController.instance()
+        self.navigationController?.pushViewController(instance, animated: true)
+    }
+    
 }
 
 extension PurchaseViewController: UITableViewDataSource {

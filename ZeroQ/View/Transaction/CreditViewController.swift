@@ -34,7 +34,9 @@ class CreditViewController: UIViewController {
         addLimitDelegate?.addLimite(spedingLimitTextField.text)
         self.navigationController?.popViewController(animated: true)
     }
-    
+}
+
+extension CreditViewController {
     private func setupView() {
         containerView.addCornerRadius(10)
         spedingLimitTextField.addBottomBorderWithColor(color: UIColor.black, height: 2)
